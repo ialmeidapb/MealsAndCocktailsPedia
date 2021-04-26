@@ -2,18 +2,18 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
 
-class Pork extends Component {
+class Drinks extends Component {
   state = {
-    porks: [],
+    drinks: [],
   };
 
   componentDidMount = async () => {
     try {
       const response = await axios.get(
-        "https://www.themealdb.com/api/json/v1/1/filter.php?c=Pork"
+        `https://www.thecocktaildb.com/api/json/v1/1/filter.php?a=${this.props.match.params.id}`
       );
       console.log(response);
-      this.setState({ porks: [...response.data.meals] });
+      this.setState({ drinks: [...response.data.drinks] });
     } catch (err) {
       console.error(err);
     }
@@ -23,14 +23,14 @@ class Pork extends Component {
     return (
       <div className="d-flex justify-content-center">
         <div className="d-flex justify-content-around m-5 wrap flex-wrap">
-          {this.state.porks.map((pork) => {
+          {this.state.drinks.map((drink) => {
             return (
-              <div key={pork.idMeal} className="card bg-dark text-white m-3">
+              <div key={drink.idDrink} className="card bg-dark text-white m-3">
                 <img
-                  src={pork.strMealThumb}
+                  src={drink.strDrinkThumb}
                   className="card-img"
                   style={{ width: "300px" }}
-                  alt={pork.strMeal}
+                  alt={drink.strDrink}
                 />
                 <div className="card-img-overlay">
                   <h4
@@ -39,7 +39,7 @@ class Pork extends Component {
                     }}
                     className="card-title d-flex justify-content-center text-center"
                   >
-                    {pork.strMeal}
+                    {drink.strDrink}
                   </h4>
                 </div>
               </div>
@@ -51,4 +51,4 @@ class Pork extends Component {
   }
 }
 
-export default Pork;
+export default Drinks;
