@@ -6,6 +6,9 @@ import dessert from "../../assets/images/dessert.jpg"
 import lamb from "../../assets/images/lamb1.png"
 import pasta from "../../assets/images/pasta.jpg"
 import seafood from "../../assets/images/seafood.jpg"
+import pork from "../../assets/images/pork.jpg"
+import vegetarian from "../../assets/images/vegetarian.jpg"
+import breakfast from "../../assets/images/breakfast.jpg"
 
 
 function FoodHomepage(){
@@ -81,7 +84,7 @@ function FoodHomepage(){
 
 <div class="card bg-dark text-white w-50 m-3">
 <Link to={`/foods/vegetarian`}>
-  <img src={pasta} class="card-img" alt="pasta"/>
+  <img src={vegetarian} class="card-img" alt="pasta"/>
   <div class="card-img-overlay">
     <h5 class="card-title">Vegetarian Recipes</h5>
   
@@ -91,7 +94,7 @@ function FoodHomepage(){
 
 <div class="card bg-dark text-white w-50 m-3">
 <Link to={`/foods/pork`}>
-  <img src={pasta} class="card-img" alt="pasta"/>
+  <img src={pork} class="card-img" alt="pasta"/>
   <div class="card-img-overlay">
     <h5 class="card-title">Pork Recipes</h5>
   
@@ -99,6 +102,16 @@ function FoodHomepage(){
  </Link>
 </div>
 
+
+<div class="card bg-dark text-white w-50 m-3">
+<Link to={`/foods/breakfast`}>
+  <img src={breakfast} class="card-img" alt="pasta"/>
+  <div class="card-img-overlay">
+    <h5 class="card-title">Breakfast Recipes</h5>
+  
+  </div>
+ </Link>
+</div>
 
 </div>
 
