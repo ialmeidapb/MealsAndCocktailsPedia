@@ -25,7 +25,7 @@ class NonAlcoholicDrinks extends Component {
         <div className="d-flex justify-content-around m-5 wrap flex-wrap">
           {this.state.drinks.map((drink) => {
             return (
-              <div key={drink.idDrink} className="card bg-dark text-white">
+              <div key={drink.idDrink} className="card bg-dark text-white m-4">
                 <img
                   src={drink.strDrinkThumb}
                   className="card-img"

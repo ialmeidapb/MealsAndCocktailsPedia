@@ -25,7 +25,7 @@ class Pasta extends Component {
         <div className="d-flex justify-content-around m-5 wrap flex-wrap">
           {this.state.pastas.map((pasta) => {
             return (
-              <div key={pasta.idMeal} className="card bg-dark text-white">
+              <div key={pasta.idMeal} className="card bg-dark text-white m-4">
                 <img
                   src={pasta.strMealThumb}
                   className="card-img"

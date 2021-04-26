@@ -20,16 +20,16 @@ function App() {
     
     <div className="App">
 
-      {/* <AlcoholicDrinks/>
+      {/* <AlcoholicDrinks/> */}
       <Beef/> 
-      <Dessert/>
+      {/* <Dessert/>
       <Chicken/>
       <Pasta/>
       <SeaFood/>
       <Vegetarian/>
       <Pork/>
-      <Lamb/> */}
-      <NonAlcoholicDrinks/>
+      <Lamb/>
+      <NonAlcoholicDrinks/> */}
       
     </div>
   );

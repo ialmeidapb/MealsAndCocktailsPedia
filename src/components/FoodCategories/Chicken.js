@@ -22,10 +22,10 @@ class Chicken extends Component {
   render() {
     return (
       <div className="d-flex justify-content-center">
-        <div className="d-flex justify-content-around m-5 wrap flex-wrap">
+        <div className="d-flex justify-content-around wrap flex-wrap m-5">
           {this.state.chickens.map((chicken) => {
             return (
-              <div key={chicken.idMeal} className="card bg-dark text-white">
+              <div key={chicken.idMeal} className="card bg-dark text-white m-4">
                 <img
                   src={chicken.strMealThumb}
                   className="card-img"
