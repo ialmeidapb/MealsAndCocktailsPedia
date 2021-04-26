@@ -25,7 +25,7 @@ class Vegetarian extends Component {
         <div className="d-flex justify-content-around m-5 wrap flex-wrap">
           {this.state.vegFoods.map((vegFood) => {
             return (
-              <div key={vegFood.idMeal} className="card bg-dark text-white m-4">
+              <div key={vegFood.idMeal} className="card bg-dark text-white m-3">
                 <img
                   src={vegFood.strMealThumb}
                   className="card-img"

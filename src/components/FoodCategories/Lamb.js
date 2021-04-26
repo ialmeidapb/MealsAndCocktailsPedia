@@ -25,7 +25,7 @@ class Lamb extends Component {
         <div className="d-flex justify-content-around m-5 wrap flex-wrap">
           {this.state.lambs.map((lamb) => {
             return (
-              <div key={lamb.idMeal} className="card bg-dark text-white m-4">
+              <div key={lamb.idMeal} className="card bg-dark text-white m-3">
                 <img
                   src={lamb.strMealThumb}
                   className="card-img"

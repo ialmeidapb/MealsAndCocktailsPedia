@@ -25,7 +25,7 @@ class Pork extends Component {
         <div className="d-flex justify-content-around m-5 wrap flex-wrap">
           {this.state.porks.map((pork) => {
             return (
-              <div key={pork.idMeal} className="card bg-dark text-white m-4">
+              <div key={pork.idMeal} className="card bg-dark text-white m-3">
                 <img
                   src={pork.strMealThumb}
                   className="card-img"
