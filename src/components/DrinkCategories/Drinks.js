@@ -22,10 +22,13 @@ class Drinks extends Component {
   render() {
     return (
       <div className="d-flex justify-content-center">
+  
         <div className="d-flex justify-content-around m-5 wrap flex-wrap">
           {this.state.drinks.map((drink) => {
             return (
+              
               <div key={drink.idDrink} className="card bg-dark text-white m-3">
+                <Link to={`/drinks/alcoholic/${drink.idDrink}`}>
                 <img
                   src={drink.strDrinkThumb}
                   className="card-img"
@@ -42,10 +45,13 @@ class Drinks extends Component {
                     {drink.strDrink}
                   </h4>
                 </div>
+              </Link>
               </div>
+              
             );
           })}
         </div>
+  
       </div>
     );
   }

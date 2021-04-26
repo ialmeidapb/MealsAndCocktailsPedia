@@ -26,6 +26,7 @@ class Meals extends Component {
           {this.state.meals.map((meal) => {
             return (
               <div key={meal.idMeal} className="card bg-dark text-white m-3">
+              <Link to={`/foods/meals/${meal.idMeal}`}>
                 <img
                   src={meal.strMealThumb}
                   className="card-img"
@@ -42,6 +43,7 @@ class Meals extends Component {
                     {meal.strMeal}
                   </h4>
                 </div>
+                </Link>
               </div>
             );
           })}
