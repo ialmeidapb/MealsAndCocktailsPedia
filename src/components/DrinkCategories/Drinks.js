@@ -2,18 +2,18 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
 
-class Vegetarian extends Component {
+class Drinks extends Component {
   state = {
-    vegFoods: [],
+    drinks: [],
   };
 
   componentDidMount = async () => {
     try {
       const response = await axios.get(
-        "https://www.themealdb.com/api/json/v1/1/filter.php?c=Vegetarian"
+        `https://www.thecocktaildb.com/api/json/v1/1/filter.php?a=${this.props.match.params.id}`
       );
       console.log(response);
-      this.setState({ vegFoods: [...response.data.meals] });
+      this.setState({ drinks: [...response.data.drinks] });
     } catch (err) {
       console.error(err);
     }
@@ -23,14 +23,14 @@ class Vegetarian extends Component {
     return (
       <div className="d-flex justify-content-center">
         <div className="d-flex justify-content-around m-5 wrap flex-wrap">
-          {this.state.vegFoods.map((vegFood) => {
+          {this.state.drinks.map((drink) => {
             return (
-              <div key={vegFood.idMeal} className="card bg-dark text-white m-4">
+              <div key={drink.idDrink} className="card bg-dark text-white m-3">
                 <img
-                  src={vegFood.strMealThumb}
+                  src={drink.strDrinkThumb}
                   className="card-img"
                   style={{ width: "300px" }}
-                  alt={vegFood.strMeal}
+                  alt={drink.strDrink}
                 />
                 <div className="card-img-overlay">
                   <h4
@@ -39,7 +39,7 @@ class Vegetarian extends Component {
                     }}
                     className="card-title d-flex justify-content-center text-center"
                   >
-                    {vegFood.strMeal}
+                    {drink.strDrink}
                   </h4>
                 </div>
               </div>
@@ -51,4 +51,4 @@ class Vegetarian extends Component {
   }
 }
 
-export default Vegetarian;
+export default Drinks;
