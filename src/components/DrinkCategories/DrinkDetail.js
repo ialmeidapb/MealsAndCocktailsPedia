@@ -30,6 +30,10 @@ class DrinkDetail extends Component{
             <h1>{this.state.drink.strDrink}</h1>
             <h4>{this.state.drink.strGlass} &nbsp; {this.state.drink.strIBA} </h4>
             <h5>{this.state.drink.attenuation_level} </h5>
+            <ul>
+            {/* <li>{this.state.drink[`strIngredient${indice}`]}</li> */}
+            
+            </ul>
             <p className="text-justify">{this.state.drink.strInstructions}</p>
             
             </div>
