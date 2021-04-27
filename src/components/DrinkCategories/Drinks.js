@@ -6,6 +6,7 @@ import TextInput from "../TextInput"
 class Drinks extends Component {
   state = {
     drinks: [],
+    originalDrinks:[],
   };
 
   componentDidMount = async () => {
@@ -14,7 +15,7 @@ class Drinks extends Component {
         `https://www.thecocktaildb.com/api/json/v1/1/filter.php?a=${this.props.match.params.id}`
       );
       console.log(response);
-      this.setState({ drinks: [...response.data.drinks] });
+      this.setState({ drinks: [...response.data.drinks], originalDrinks: [...response.data.drinks] });
     } catch (err) {
       console.error(err);
     }
@@ -23,7 +24,7 @@ class Drinks extends Component {
 
   componentDidUpdate = (prevProps, prevState) => {
     if (prevState.searchedItem !== this.state.searchedItem) {
-      const filteredArray = this.state.drinks.filter((drink) =>
+      const filteredArray = this.state.originalDrinks.filter((drink) =>
        drink.strDrink
           .toLowerCase()
           .includes(this.state.searchedItem.toLowerCase())

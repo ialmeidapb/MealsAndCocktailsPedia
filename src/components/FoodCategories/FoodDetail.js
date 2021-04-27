@@ -27,8 +27,8 @@ class FoodDetail extends Component{
            
             <div className="container mt-5 text-center">
             <img className="m-5" src={this.state.food.strMealThumb} width="400px"></img>
-            <h1>{this.state.food.strMeal}</h1>
-            <h4>Origin: {this.state.food.strArea} </h4>
+            <h1 className="mt-5">{this.state.food.strMeal}</h1>
+            <h4 className="mb-5">Origin: {this.state.food.strArea} </h4>
             
             <div className="text-left mt-2 mb-2">
             <ul><h3>Ingredients:</h3>
