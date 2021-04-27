@@ -10,8 +10,15 @@ import DrinkDetail from "./DrinkCategories/DrinkDetail"
 import FoodDetail from "./FoodCategories/FoodDetail"
 
 import MainHomepage from "./Homepages/MainHomepage"
+
+
+
+
+import Navbar from "./Homepages/Navbar";
 import RandomMeal from "./FoodCategories/RandomMeal"
 import RandomDrink from "./DrinkCategories/RandomDrink"
+
+
 
 
 
@@ -20,6 +27,7 @@ function App() {
     
     <div>
   <BrowserRouter>
+  {/* <Navbar className="bar" /> */}
   
   <Route exact path="/" component={MainHomepage} />
   <Route exact path="/foods" component={FoodHomepage} />
