@@ -27,8 +27,8 @@ class DrinkDetail extends Component{
            
             <div className="container mt-5 text-center">
             <img src={this.state.drink.strDrinkThumb} width="400px"></img>
-            <h1>{this.state.drink.strDrink}</h1>
-            <h4>Recommended Glass: {this.state.drink.strGlass}</h4>
+            <h1 className="mt-5">{this.state.drink.strDrink}</h1>
+            <h4 className="mb-5">Recommended Glass: {this.state.drink.strGlass}</h4>
             <h5>{this.state.drink.attenuation_level} </h5>
             <div className="text-left mt-2 mb-2">
             <ul><h3>Ingredients:</h3>

@@ -6,6 +6,7 @@ import TextInput from "../TextInput"
 class Meals extends Component {
   state = {
     meals: [],
+    originalMeals: [],
   };
 
 
@@ -16,7 +17,7 @@ class Meals extends Component {
         `https://www.themealdb.com/api/json/v1/1/filter.php?c=${this.props.match.params.id}`
       );
       console.log(response);
-      this.setState({ meals: [...response.data.meals] });
+      this.setState({ meals: [...response.data.meals], originalMeals: [...response.data.meals] });
     } catch (err) {
       console.error(err);
     }
@@ -25,7 +26,7 @@ class Meals extends Component {
 
   componentDidUpdate = (prevProps, prevState) => {
     if (prevState.searchedItem !== this.state.searchedItem) {
-      const filteredArray = this.state.meals.filter((meal) =>
+      const filteredArray = this.state.originalMeals.filter((meal) =>
        meal.strMeal
           .toLowerCase()
           .includes(this.state.searchedItem.toLowerCase())
