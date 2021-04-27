@@ -14,7 +14,7 @@ import MainHomepage from "./Homepages/MainHomepage"
 import Navbar from "./Homepages/Navbar";
 import RandomMeal from "./FoodCategories/RandomMeal"
 import RandomDrink from "./DrinkCategories/RandomDrink"
-
+import Printer from "./Printer"
 
 
 
@@ -35,6 +35,7 @@ function App() {
   <Route exact path="/drinks/:id" component={Drinks} />
   <Route exact path="/drinks/cocktail/:id" component={DrinkDetail} />
   <Route exact path="/randomdrink" component={RandomDrink} />
+  <Route exact path="/printer" component={Printer} />
   
 
   </BrowserRouter>
