@@ -17,19 +17,26 @@ function MainHomepage() {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    speed: 9000,
-    // autoplaySpeed: 10000,  // carousel sem parar
+    autoplaySpeed: 1000, 
+    speed: 10000,
     cssEase: "linear",
+    arrows: false,
+    variableWidth: false,
+    adaptiveHeight: true,
+    centerPadding: "0",
+    fade: true,
   };
+
   return (
-    <div>
+    <div className="AllMainHomepage">
       <Navbar className="bar" style={{zIndex:1}} />
+      
       <div className="MainHomepageNavbar" style={{zIndex:2}}>
         <Slider {...settings}>
-          <div className="maincard">
+          <div className="MainImg">
             <img className="img" src={cooker} />
           </div>
-          <div className="maincard">
+          <div className="MainImg">
             <img className="img" src={bartender} />
           </div>
         </Slider>

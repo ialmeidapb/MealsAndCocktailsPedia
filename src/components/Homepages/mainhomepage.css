@@ -3,19 +3,29 @@
     outline: 0;
     box-sizing: border-box;
     font-family: JosefinSlab, sans-serif;
-    overflow: hidden;
+    
+
 }
 
 .img{
-    width:90vw;
-    height:100vh;
+    /* width: calc(100vw - 200px) !important; */
+    max-width: 100%;
+    height: auto;
 }
 
+.MainImg {
+    
+    object-fit: scale-down;
+}
+
+.AllMainHomepage {
+    overflow: hidden;
+}
 .MainHomepageNavbar {
-    margin-left: 199px;
+    overflow: none;
+    margin-left: 270px;
     position: relative;
     width: 100%;
-    overflow: hidden;
 }
 
 .carousel{
