@@ -28,7 +28,7 @@ class Drinks extends Component {
             return (
               
               <div key={drink.idDrink} className="card bg-dark text-white m-3">
-                <Link to={`/drinks/alcoholic/${drink.idDrink}`}>
+                <Link to={`/drinks/cocktail/${drink.idDrink}`}>
                 <img
                   src={drink.strDrinkThumb}
                   className="card-img"

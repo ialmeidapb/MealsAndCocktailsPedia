@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import chicken from "../../assets/images/chicken.jpg"
 import meat from "../../assets/images/meat.jpg"
 import dessert from "../../assets/images/dessert.jpg"
-import lamb from "../../assets/images/lamb1.png"
+import lamb from "../../assets/images/lamb.png"
 import pasta from "../../assets/images/pasta.jpg"
 import seafood from "../../assets/images/seafood.jpg"
 import pork from "../../assets/images/pork.jpg"
