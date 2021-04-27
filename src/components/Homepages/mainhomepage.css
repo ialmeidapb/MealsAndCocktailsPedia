@@ -1,21 +1,23 @@
+*{
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    font-family: JosefinSlab, sans-serif;
+    overflow: hidden;
+}
+
 .img{
-    width:85vw;;
+    width:90vw;
     height:100vh;
-    
-    
 }
 
-.bar{
-    /* display: block; */
+.MainHomepageNavbar {
+    margin-left: 199px;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel{
     position: absolute;
-    left: 230px;
-    height: 100%;
 }
-
-.maincard {
-    margin-left: 225px;
-
-}
-/* .carousel{
-    position: absolute;
-} */
