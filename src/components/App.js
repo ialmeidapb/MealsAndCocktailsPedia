@@ -10,6 +10,7 @@ import DrinkDetail from "./DrinkCategories/DrinkDetail"
 import FoodDetail from "./FoodCategories/FoodDetail"
 
 import MainHomepage from "./Homepages/MainHomepage"
+import Navbar from "./Homepages/Navbar";
 
 
 
@@ -18,6 +19,7 @@ function App() {
     
     <div>
   <BrowserRouter>
+  {/* <Navbar className="bar" /> */}
   
   <Route exact path="/" component={MainHomepage} />
   <Route exact path="/foods" component={FoodHomepage} />

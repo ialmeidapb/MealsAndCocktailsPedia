@@ -4,15 +4,15 @@ import { Link } from "react-router-dom";
 import cooker from "../../assets/images/cooker.jpg";
 import bartender from "../../assets/images/barista.jpg";
 import "./mainhomepage.css";
+import Navbar from "./Navbar";
 
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Navbar from "./Navbar";
 
 function MainHomepage() {
   const settings = {
-    dots: true,
+    // dots: true,
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -23,10 +23,8 @@ function MainHomepage() {
   };
   return (
     <div>
-
-      <Navbar className="bar" />
-
-      <div>
+      <Navbar className="bar" style={{zIndex:1}} />
+      <div className="MainHomepageNavbar" style={{zIndex:2}}>
         <Slider {...settings}>
           <div className="maincard">
             <img className="img" src={cooker} />
