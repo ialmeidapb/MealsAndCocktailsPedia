@@ -26,9 +26,28 @@ class FoodDetail extends Component{
             <div>
            
             <div className="container mt-5 text-center">
-            <img src={this.state.food.strMealThumb} width="100px"></img>
+            <img className="m-5" src={this.state.food.strMealThumb} width="400px"></img>
             <h1>{this.state.food.strMeal}</h1>
-            <h4>{this.state.food.strTags} &nbsp; {this.state.food.strArea} </h4>
+            <h4>Origin: {this.state.food.strArea} </h4>
+            <ul>
+            {/* <li>{this.state.food[`strIngredient${indice}`]}</li> */}
+            <li>{this.state.food.strIngredient1}</li>
+            <li>{this.state.food.strIngredient2}</li>
+            <li>{this.state.food.strIngredient3}</li>
+            <li>{this.state.food.strIngredient4}</li>
+            <li>{this.state.food.strIngredient5}</li>
+            <li>{this.state.food.strIngredient6}</li>
+            <li>{this.state.food.strIngredient7}</li>
+            <li>{this.state.food.strIngredient8}</li>
+            <li>{this.state.food.strIngredient9}</li>
+            <li>{this.state.food.strIngredient10}</li>
+            <li>{this.state.food.strIngredient11}</li>
+            <li>{this.state.food.strIngredient12}</li>
+            <li>{this.state.food.strIngredient13}</li>
+            <li>{this.state.food.strIngredient14}</li>
+            <li>{this.state.food.strIngredient15}</li>
+
+            </ul>
             <p className="text-justify">{this.state.food.strInstructions}</p>
             
             </div>
