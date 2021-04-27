@@ -8,12 +8,15 @@ import DrinkHomepage from "./Homepages/DrinkHomepage"
 import DrinkDetail from "./DrinkCategories/DrinkDetail"
 import FoodDetail from "./FoodCategories/FoodDetail"
 
+import MainHomepage from "./Homepages/MainHomepage"
+
 
 
 function App() {
   return (
     <div className="App">
   <BrowserRouter>
+  <MainHomepage/>
   
   <Route exact path="/foods" component={FoodHomepage} />
   <Route exact path="/foods/:id" component={Meals} />
