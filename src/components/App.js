@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Route, Link } from "react-router-dom";
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Drinks from "./DrinkCategories/Drinks"
 import Meals from "./FoodCategories/Meals"
@@ -15,10 +16,10 @@ import MainHomepage from "./Homepages/MainHomepage"
 function App() {
   return (
     
-    <div className="App">
+    <div>
   <BrowserRouter>
-  <MainHomepage/>
   
+  <Route exact path="/" component={MainHomepage} />
   <Route exact path="/foods" component={FoodHomepage} />
   <Route exact path="/foods/:id" component={Meals} />
   <Route exact path="/foods/meals/:id" component={FoodDetail} />

@@ -1,0 +1,14 @@
+.img{
+    width:85vw;;
+    height:100vh;
+    
+    
+}
+
+.bar{
+    position:absolute;
+
+}
+.carousel{
+    align-content: flex-end;
+}
