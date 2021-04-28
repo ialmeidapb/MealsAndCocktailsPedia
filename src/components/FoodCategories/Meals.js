@@ -2,15 +2,11 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
 import TextInput from "../TextInput"
-
 class Meals extends Component {
   state = {
     meals: [],
     originalMeals: [],
   };
-
-
-
   componentDidMount = async () => {
     try {
       const response = await axios.get(
@@ -22,8 +18,6 @@ class Meals extends Component {
       console.error(err);
     }
   };
-
-
   componentDidUpdate = (prevProps, prevState) => {
     if (prevState.searchedItem !== this.state.searchedItem) {
       const filteredArray = this.state.originalMeals.filter((meal) =>
@@ -34,13 +28,11 @@ class Meals extends Component {
       this.setState({ meals: filteredArray });
     }
   };
-
   handleChange = (event) => {
     this.setState({
       [event.target.name]: event.target.value,
     });
   };
-
   render() {
     return (
       <div>
@@ -52,7 +44,6 @@ class Meals extends Component {
             label="Search"
             onChange={this.handleChange}
           /></div>
-
         <div className="d-flex justify-content-around m-5 wrap flex-wrap">
           {this.state.meals.map((meal) => {
             return (
@@ -83,5 +74,4 @@ class Meals extends Component {
     );
   }
 }
-
 export default Meals;

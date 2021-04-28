@@ -11,8 +11,8 @@ class ComponentToPrint extends React.PureComponent {
         <div>
           
             {/* <h1>{FoodDetail.state.food.strMeal}</h1>
-            <p>{FoodDetail.state.food.strInstructions}</p> */}
-            <h1>Oiiii</h1>
+            <p>{FoodDetailstate.food.strInstructions}</p> */}
+            
           
           
         </div>
