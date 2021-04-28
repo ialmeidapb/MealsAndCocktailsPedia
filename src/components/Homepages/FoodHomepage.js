@@ -39,11 +39,13 @@ class FoodHomepage extends React.Component {
     };
 
     return (
+
       <div className = "homeFD">
         <Navbar className="bar" style={{ zIndex: 1 }} />
 
         <div className="allFDHomepage" style={{ zIndex: 2 }}>
           <h2 className="mayI">How can I Serve You?</h2>
+
 
           <div className="img-slider">
             <Slider {...settings}>
