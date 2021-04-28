@@ -3,6 +3,9 @@ import { Link } from "react-router-dom";
 import axios from "axios";
 import TextInput from "../TextInput";
 
+import "../Homepages/mainhomepage.css";
+import Navbar from "../Homepages/Navbar";
+
 class Drinks extends Component {
   state = {
     drinks: [],
@@ -14,7 +17,7 @@ class Drinks extends Component {
       const response = await axios.get(
         `https://www.thecocktaildb.com/api/json/v1/1/filter.php?a=${this.props.match.params.id}`
       );
-  
+
       console.log(response);
       this.setState({
         drinks: [...response.data.drinks],
@@ -45,41 +48,44 @@ class Drinks extends Component {
   render() {
     return (
       <div>
-        <div className="container mt-5">
-          <TextInput
-            name="searchedItem"
-            value={this.state.searchedItem}
-            id="searchedItem"
-            label="Search"
-            onChange={this.handleChange}
-          />
-        </div>
+        <Navbar className="bar" style={{ zIndex: 1 }} />
 
-        <div className="d-flex justify-content-around m-5 wrap flex-wrap">
-          {this.state.drinks.map((drink) => {
-            return (
-              <div key={drink.idDrink} className="card bg-dark text-white m-3">
-                <Link to={`/drinks/cocktail/${drink.idDrink}`}>
-                  <img
-                    src={drink.strDrinkThumb}
-                    className="card-img"
-                    style={{ width: "300px" }}
-                    alt={drink.strDrink}
-                  />
-                  <div className="card-img-overlay">
-                    <h4
-                      style={{
-                        textShadow: "2px 4px 3px #FF2222",
-                      }}
-                      className="card-title d-flex justify-content-center text-center"
-                    >
-                      {drink.strDrink}
-                    </h4>
-                  </div>
-                </Link>
-              </div>
-            );
-          })}
+        <div className="allMeals" style={{ zIndex: 2 }}>
+          <div className="container mt-5">
+            <TextInput
+              name="searchedItem"
+              value={this.state.searchedItem}
+              id="searchedItem"
+              label="Search"
+              onChange={this.handleChange}
+            />
+          </div>
+
+          <div className="d-flex justify-content-around m-5 wrap flex-wrap">
+            {this.state.drinks.map((drink) => {
+              return (
+                <div
+                  key={drink.idDrink}
+                  className="card bg-dark text-white m-3"
+                >
+                  <Link to={`/drinks/cocktail/${drink.idDrink}`}>
+                    <img
+                      src={drink.strDrinkThumb}
+                      className="card-img"
+                      style={{ width: "300px" }}
+                      alt={drink.strDrink}
+                    />
+                    <div className="card-img-overlay">
+                      <h4 className = "textCard"
+                      >
+                        {drink.strDrink}
+                      </h4>
+                    </div>
+                  </Link>
+                </div>
+              );
+            })}
+          </div>
         </div>
       </div>
     );
