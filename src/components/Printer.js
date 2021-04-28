@@ -1,7 +1,7 @@
-import React from 'react';
-import ReactToPrint from 'react-to-print';
+import React from "react";
+import ReactToPrint from "react-to-print";
 
-import ComponentToPrint from './ComponentToPrint';
+import ComponentToPrint from "./ComponentToPrint";
 
 class Printer extends React.PureComponent {
   render() {
@@ -15,7 +15,7 @@ class Printer extends React.PureComponent {
           }}
           content={() => this.componentRef}
         />
-        <ComponentToPrint ref={el => (this.componentRef = el)} />
+        <ComponentToPrint ref={(el) => (this.componentRef = el)} />
       </div>
     );
   }

@@ -1,9 +1,6 @@
-import React from 'react';
-import ReactToPrint from 'react-to-print';
-import FoodDetail from "./FoodCategories/FoodDetail"
-
-
-
+import React from "react";
+import ReactToPrint from "react-to-print";
+import FoodDetail from "./FoodCategories/FoodDetail";
 
 class ComponentToPrint extends React.PureComponent {
     render() {
@@ -20,4 +17,5 @@ class ComponentToPrint extends React.PureComponent {
     }
   }
 
-  export default ComponentToPrint;
+
+export default ComponentToPrint;

@@ -1,37 +1,69 @@
 * {
-    padding: 0;
-    outline: 0;
-    box-sizing: border-box;
-    font-family: JosefinSlab, sans-serif;
-  }
-  .img {
-    /* width: calc(100vw - 200px) !important; */
-    max-width: 100%;
-    height: auto;
-  }
-  .MainImg {
-    object-fit: scale-down;
-  }
-  .AllMainHomepage {
-    overflow: hidden;
-  }
-  .MainHomepageNavbar {
-    overflow: none;
-    margin-left: 270px;
-    position: relative;
-    width: 100%;
-  }
-  .carousel {
-    position: absolute;
-  }
-
-.foodimg{
-    max-width: 75%;
-    max-height: 10%;
+  padding: 0;
+  outline: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
-.img-slider{
-    margin-left: 200px;
-    margin-top: 50px;
-    
+@font-face {
+  font-family: bitechocolate;
+  src: url(../../assets/fonts/bitechocolate.ttf);
+}
+
+@font-face {
+  font-family: amaticsc;
+  src: url(../../assets/fonts/amaticsc.woff2);
+}
+
+.img {
+  /* width: calc(100vw - 200px) !important; */
+  max-width: 100%;
+  height: auto;
+}
+.MainImg {
+  object-fit: scale-down;
+}
+.mayI {
+  font-family: amaticsc;
+  font-size: 40px;
+  padding: 5px;
+  text-align: center;
+  margin-right: 390px;
+}
+
+.foodRecipe {
+  font-family: bitechocolate;
+  font-size: 13px;
+  padding: 10px;
+  margin-top: 5px;
+  text-decoration: none;
+  
+}
+
+.AllMainHomepage {
+  overflow: hidden;
+}
+.MainHomepageNavbar {
+  overflow: none;
+  margin-left: 270px;
+  position: relative;
+  width: 100%;
+}
+.carousel {
+  position: absolute;
+}
+
+.foodimg {
+  max-width: 75%;
+  max-height: auto;
+}
+
+.AllFoodHomepage {
+  background-image: url("../../assets/images/bluewall.jpg");
+  background-size: cover;
+  margin-left: 270px;
+  position: relative;
+  width: 100%;
 }

@@ -13,7 +13,10 @@ class Meals extends Component {
         `https://www.themealdb.com/api/json/v1/1/filter.php?c=${this.props.match.params.id}`
       );
       console.log(response);
-      this.setState({ meals: [...response.data.meals], originalMeals: [...response.data.meals] });
+      this.setState({
+        meals: [...response.data.meals],
+        originalMeals: [...response.data.meals],
+      });
     } catch (err) {
       console.error(err);
     }
@@ -21,7 +24,7 @@ class Meals extends Component {
   componentDidUpdate = (prevProps, prevState) => {
     if (prevState.searchedItem !== this.state.searchedItem) {
       const filteredArray = this.state.originalMeals.filter((meal) =>
-       meal.strMeal
+        meal.strMeal
           .toLowerCase()
           .includes(this.state.searchedItem.toLowerCase())
       );
@@ -36,8 +39,8 @@ class Meals extends Component {
   render() {
     return (
       <div>
-  <div className="container mt-5">
-  <TextInput
+        <div className="container mt-5">
+          <TextInput
             name="searchedItem"
             value={this.state.searchedItem}
             id="searchedItem"
@@ -48,23 +51,23 @@ class Meals extends Component {
           {this.state.meals.map((meal) => {
             return (
               <div key={meal.idMeal} className="card bg-dark text-white m-3">
-              <Link to={`/foods/meals/${meal.idMeal}`}>
-                <img
-                  src={meal.strMealThumb}
-                  className="card-img"
-                  style={{ width: "300px" }}
-                  alt={meal.strMeal}
-                />
-                <div className="card-img-overlay">
-                  <h4
-                    style={{
-                      textShadow: "2px 4px 3px #FF2222",
-                    }}
-                    className="card-title d-flex justify-content-center text-center"
-                  >
-                    {meal.strMeal}
-                  </h4>
-                </div>
+                <Link to={`/foods/meals/${meal.idMeal}`}>
+                  <img
+                    src={meal.strMealThumb}
+                    className="card-img"
+                    style={{ width: "300px" }}
+                    alt={meal.strMeal}
+                  />
+                  <div className="card-img-overlay">
+                    <h4
+                      style={{
+                        textShadow: "2px 4px 3px #FF2222",
+                      }}
+                      className="card-title d-flex justify-content-center text-center"
+                    >
+                      {meal.strMeal}
+                    </h4>
+                  </div>
                 </Link>
               </div>
             );
