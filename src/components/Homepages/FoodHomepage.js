@@ -9,6 +9,7 @@ import seafood from "../../assets/images/food-img/seafood.png";
 import pork from "../../assets/images/food-img/pork.png";
 import vegetarian from "../../assets/images/food-img/vegetarian.png";
 import breakfast from "../../assets/images/food-img/breakfast.jpg";
+import starter from "../../assets/images/food-img/starters.png"
 import "./mainhomepage.css";
 import Navbar from "./Navbar";
 import bitechocolate from "../../assets/fonts/bitechocolate.ttf"
@@ -23,7 +24,7 @@ class FoodHomepage extends React.Component {
       dots: false,
       arrows: true,
       infinite: true,
-      slidesToShow: 2,
+      slidesToShow: 3,
       slidesToScroll: 2,
       vertical: true,
       verticalSwiping: true,
@@ -93,7 +94,7 @@ class FoodHomepage extends React.Component {
 
               <div>
                 <Link to={`/foods/seafood`}>
-                  <img src={seafood} className="foodimg" alt="pasta" />
+                  <img src={seafood} className="foodimg" alt="seafood" />
                   <div>
                     <h5 className = "foodRecipe">SeaFood Recipes</h5>
                   </div>
@@ -102,7 +103,7 @@ class FoodHomepage extends React.Component {
 
               <div>
                 <Link to={`/foods/vegetarian`}>
-                  <img src={vegetarian} className="foodimg" alt="pasta" />
+                  <img src={vegetarian} className="foodimg" alt="vegetarian" />
                   <div>
                     <h5 className = "foodRecipe">Vegetarian Recipes</h5>
                   </div>
@@ -111,7 +112,7 @@ class FoodHomepage extends React.Component {
 
               <div>
                 <Link to={`/foods/pork`}>
-                  <img src={pork} className="foodimg" alt="pasta" />
+                  <img src={pork} className="foodimg" alt="pork" />
                   <div>
                     <h5 className = "foodRecipe">Pork Recipes</h5>
                   </div>
@@ -120,9 +121,18 @@ class FoodHomepage extends React.Component {
 
               <div>
                 <Link to={`/foods/breakfast`}>
-                  <img src={breakfast} className="foodimg" alt="pasta" />
+                  <img src={breakfast} className="foodimg" alt="breakfast" />
                   <div>
                     <h5 className = "foodRecipe">Breakfast Recipes</h5>
+                  </div>
+                </Link>
+              </div>
+
+              <div>
+                <Link to={`/foods/starter`}>
+                  <img src={starter} className="foodimg" alt="starter" />
+                  <div>
+                    <h5 className = "foodRecipe">Starters</h5>
                   </div>
                 </Link>
               </div>
