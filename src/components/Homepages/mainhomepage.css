@@ -33,7 +33,7 @@
   margin-right: 390px;
 }
 
-.foodRecipe {
+.recipeFD {
   font-family: bitechocolate;
   font-size: 13px;
   padding: 10px;
@@ -60,7 +60,7 @@
   max-height: auto;
 }
 
-.AllFoodHomepage {
+.AllFDHomepage {
   background-image: url("../../assets/images/bluewall.jpg");
   background-size: cover;
   margin-left: 270px;
