@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
 import TextInput from "../TextInput";
+// import amaticsc from "../../assets/fonts/amaticsc.woff2"
 
 import "../Homepages/mainhomepage.css";
 import Navbar from "../Homepages/Navbar";
@@ -47,10 +48,12 @@ class Meals extends Component {
 
         <div className="allMeals">
           <div className="container mt-5" style={{ zIndex: 2 }}>
-            <TextInput
+            <TextInput className="search"
               name="searchedItem"
               value={this.state.searchedItem}
               id="searchedItem"
+              // fontFamily={"amaticsc"}
+              // theme={{ fonts: { regular: 'amaticsc' } }}
               label="Search"
               onChange={this.handleChange}
             />
@@ -67,14 +70,7 @@ class Meals extends Component {
                       alt={meal.strMeal}
                     />
                     <div className="card-img-overlay">
-                      <h4
-                        style={{
-                          textShadow: "2px 4px 3px #FF2222",
-                        }}
-                        className="card-title d-flex justify-content-center text-center"
-                      >
-                        {meal.strMeal}
-                      </h4>
+                      <h4 className="textCard">{meal.strMeal}</h4>
                     </div>
                   </Link>
                 </div>
