@@ -1,12 +1,14 @@
 import React from "react";
+import "./Homepages/mainhomepage.css"
 
 function TextInput(props) {
   return (
-    <div className="mb-3">
+   <div>
+      <div className="mb-3">
       <label htmlFor={props.id} className="form-label">
         {props.label}
       </label>
-      <input
+      <input 
         name={props.name}
         type="text"
         className="form-control"
@@ -15,6 +17,7 @@ function TextInput(props) {
         onChange={props.onChange}
       />
     </div>
+   </div>
   );
 }
 
