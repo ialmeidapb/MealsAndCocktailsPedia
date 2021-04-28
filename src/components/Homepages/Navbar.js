@@ -38,10 +38,7 @@ function Navbar() {
               </li>
             </ul>
             <div className="social_media">
-              <a
-                target="_blank"
-                href="https://www.linkedin.com/in/graziele-dantas-silveira-6330591aa/"
-              >
+              <a target="_blank" href="https://www.linkedin.com/in/trolleza/">
                 <i class="fab fa-linkedin fa-lg"></i>
               </a>
               <a target="_blank" href="https://github.com/Trolleza">
