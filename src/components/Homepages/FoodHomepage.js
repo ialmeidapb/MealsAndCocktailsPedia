@@ -40,7 +40,7 @@ class FoodHomepage extends React.Component {
     };
 
     return (
-      <div className="foodhome">
+      <div>
         <Navbar/>
         <div className="AllFoodHomepage">
           <h2 className="mayI">How may I Serve You?</h2>
