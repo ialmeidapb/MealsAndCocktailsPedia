@@ -1,36 +1,29 @@
-*{
+* {
     padding: 0;
     outline: 0;
     box-sizing: border-box;
     font-family: JosefinSlab, sans-serif;
-    
-    
-}
-
-.img{
+  }
+  .img {
     /* width: calc(100vw - 200px) !important; */
     max-width: 100%;
     height: auto;
-}
-
-.MainImg {
-    
+  }
+  .MainImg {
     object-fit: scale-down;
-}
-
-.AllMainHomepage {
+  }
+  .AllMainHomepage {
     overflow: hidden;
-}
-.MainHomepageNavbar {
+  }
+  .MainHomepageNavbar {
     overflow: none;
     margin-left: 270px;
     position: relative;
     width: 100%;
-}
-
-.carousel{
+  }
+  .carousel {
     position: absolute;
-}
+  }
 
 .foodimg{
     max-width: 75%;
