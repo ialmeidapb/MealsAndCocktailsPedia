@@ -12,7 +12,6 @@ import breakfast from "../../assets/images/food-img/breakfast.jpg";
 import starter from "../../assets/images/food-img/starters.png"
 import "./mainhomepage.css";
 import Navbar from "./Navbar";
-import bitechocolate from "../../assets/fonts/bitechocolate.ttf"
 
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -42,25 +41,34 @@ class FoodHomepage extends React.Component {
     return (
       <div>
         <Navbar/>
-        <div className="AllFoodHomepage">
+        <div className="AllFDHomepage">
           <h2 className="mayI">How may I Serve You?</h2>
 
-          <div className="img-slider" style={{fontFamily: {bitechocolate}}}>
+          <div className="img-slider">
             <Slider {...settings}>
               <div className="imgcard">
                 <Link to={`/foods/beef`}>
-                  <img src={meat} className="foodimg" alt="meat" />
+                  <img src={meat} className="foodimg" alt="meat food" />
                   <div>
-                    <h5 className = "foodRecipe">Beef Recipes</h5>
+                    <h5 className = "recipeFD">Beef Recipes</h5>
                   </div>
                 </Link>
               </div>
 
               <div>
                 <Link to={`/foods/chicken`}>
-                  <img src={chicken} className="foodimg" alt="chicken" />
+                  <img src={chicken} className="foodimg" alt="chicken food" />
                   <div>
-                    <h5 className = "foodRecipe">Chicken Recipes</h5>
+                    <h5 className = "recipeFD">Chicken Recipes</h5>
+                  </div>
+                </Link>
+              </div>
+
+              <div>
+                <Link to={`/foods/seafood`}>
+                  <img src={seafood} className="foodimg" alt="sea food" />
+                  <div>
+                    <h5 className = "recipeFD">SeaFood Recipes</h5>
                   </div>
                 </Link>
               </div>
@@ -69,52 +77,48 @@ class FoodHomepage extends React.Component {
                 <Link to={`/foods/dessert`}>
                   <img src={dessert} className="foodimg" alt="dessert" />
                   <div>
-                    <h5 className = "foodRecipe">Desserts Recipes</h5>
+                    <h5 className = "recipeFD">Desserts Recipes</h5>
                   </div>
                 </Link>
               </div>
 
               <div>
                 <Link to={`/foods/lamb`}>
-                  <img src={lamb} className="foodimg" alt="lamb" />
+                  <img src={lamb} className="foodimg" alt="lamb food" />
                   <div>
-                    <h5 className = "foodRecipe">Lamb Recipes</h5>
-                  </div>
-                </Link>
-              </div>
-
-              <div>
-                <Link to={`/foods/pasta`}>
-                  <img src={pasta} className="foodimg" alt="pasta" />
-                  <div>
-                    <h5 className = "foodRecipe">Pasta Recipes</h5>
-                  </div>
-                </Link>
-              </div>
-
-              <div>
-                <Link to={`/foods/seafood`}>
-                  <img src={seafood} className="foodimg" alt="seafood" />
-                  <div>
-                    <h5 className = "foodRecipe">SeaFood Recipes</h5>
-                  </div>
-                </Link>
-              </div>
-
-              <div>
-                <Link to={`/foods/vegetarian`}>
-                  <img src={vegetarian} className="foodimg" alt="vegetarian" />
-                  <div>
-                    <h5 className = "foodRecipe">Vegetarian Recipes</h5>
+                    <h5 className = "recipeFD">Lamb Recipes</h5>
                   </div>
                 </Link>
               </div>
 
               <div>
                 <Link to={`/foods/pork`}>
-                  <img src={pork} className="foodimg" alt="pork" />
+                  <img src={pork} className="foodimg" alt="pork food" />
                   <div>
-                    <h5 className = "foodRecipe">Pork Recipes</h5>
+                    <h5 className = "recipeFD">Pork Recipes</h5>
+                  </div>
+                </Link>
+              </div>
+
+              <div>
+
+                <Link to={`/foods/pasta`}>
+                  <img src={pasta} className="foodimg" alt="pasta food" />
+
+                  <div>
+                    <h5 className = "recipeFD">Pasta Recipes</h5>
+                  </div>
+                </Link>
+              </div>
+
+              <div>
+
+                <Link to={`/foods/vegetarian`}>
+                  <img src={vegetarian} className="foodimg" alt="vetarian food" />
+
+
+                  <div>
+                    <h5 className = "recipeFD">Vegetarian Recipes</h5>
                   </div>
                 </Link>
               </div>
@@ -123,7 +127,7 @@ class FoodHomepage extends React.Component {
                 <Link to={`/foods/breakfast`}>
                   <img src={breakfast} className="foodimg" alt="breakfast" />
                   <div>
-                    <h5 className = "foodRecipe">Breakfast Recipes</h5>
+                    <h5 className = "recipeFD">Breakfast Recipes</h5>
                   </div>
                 </Link>
               </div>
