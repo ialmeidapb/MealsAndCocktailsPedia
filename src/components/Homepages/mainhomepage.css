@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family: JosefinSlab, sans-serif;
     
+    
 }
 
 .img{
@@ -29,4 +30,15 @@
 
 .carousel{
     position: absolute;
+}
+
+.foodimg{
+    max-width: 75%;
+    max-height: 10%;
+}
+
+.img-slider{
+    margin-left: 200px;
+    margin-top: 50px;
+    
 }
