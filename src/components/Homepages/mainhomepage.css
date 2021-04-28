@@ -4,7 +4,7 @@
   margin: 0;
   border: 0;
   box-sizing: border-box;
-  overflow: hidden;
+  
 }
 
 @font-face {
@@ -66,4 +66,8 @@
   margin-left: 270px;
   position: relative;
   width: 100%;
+}
+
+.foodhome{
+  overflow: hidden;
 }
