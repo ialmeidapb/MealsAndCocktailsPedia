@@ -4,7 +4,6 @@
   margin: 0;
   border: 0;
   box-sizing: border-box;
-  overflow: hidden;
 }
 
 @font-face {
@@ -17,40 +16,54 @@
   src: url(../../assets/fonts/amaticsc.woff2);
 }
 
-.img {
-  /* width: calc(100vw - 200px) !important; */
-  max-width: 100%;
-  height: auto;
+a:hover, a:visited, a:link, a:active
+{
+    text-decoration: none;
 }
-.MainImg {
-  object-fit: scale-down;
-}
+
 .mayI {
   font-family: amaticsc;
   font-size: 40px;
-  padding: 5px;
+  padding: 6px;
   text-align: center;
-  margin-right: 390px;
+  margin-right: 380px;
 }
 
 .recipeFD {
   font-family: bitechocolate;
-  font-size: 13px;
-  padding: 10px;
+  font-size: 15px;
+  padding: 15px;
   margin-top: 5px;
   text-decoration: none;
-  
 }
 
-.AllMainHomepage {
+.allMainHomepage {
+  overflow: hidden;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+.img {
+  /* width: calc(100vw - 200px) !important; */
+  max-width: 100%;
+  height: auto;
   overflow: hidden;
 }
+
 .MainHomepageNavbar {
   overflow: none;
   margin-left: 270px;
   position: relative;
   width: 100%;
 }
+
+.allMeals {
+  margin-left: 270px;
+  overflow: scroll;
+  background-image: url("../../assets/images/bluewall.jpg");
+  background-size: cover;
+}
+
 .carousel {
   position: absolute;
 }
@@ -60,10 +73,13 @@
   max-height: auto;
 }
 
-.AllFDHomepage {
+.allFDHomepage {
   background-image: url("../../assets/images/bluewall.jpg");
   background-size: cover;
   margin-left: 270px;
   position: relative;
   width: 100%;
+}
+.homeFD{
+  overflow: hidden;
 }

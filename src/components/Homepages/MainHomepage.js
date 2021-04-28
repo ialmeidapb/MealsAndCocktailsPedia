@@ -25,7 +25,7 @@ function MainHomepage() {
     fade: true,
   };
   return (
-    <div className="AllMainHomepage">
+    <div className="allMainHomepage">
       <Navbar className="bar" style={{ zIndex: 1 }} />
       <div className="MainHomepageNavbar" style={{ zIndex: 2 }}>
         <Slider {...settings}>
