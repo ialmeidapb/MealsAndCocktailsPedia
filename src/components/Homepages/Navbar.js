@@ -9,7 +9,7 @@ function Navbar() {
       <div className="position-fixed">
         <div className="wrapper">
           <div className="sidebar">
-            <h2>Menu</h2>
+            <h2 className="menu">Menu</h2>
             <ul>
               <li>
                 <Link to="/">
