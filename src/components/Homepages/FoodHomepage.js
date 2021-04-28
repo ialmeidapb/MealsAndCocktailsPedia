@@ -21,7 +21,7 @@ class FoodHomepage extends React.Component {
   render = () => {
     const settings = {
       dots: false,
-      arrows: true,
+      arrows: false,
       infinite: true,
       slidesToShow: 3,
       slidesToScroll: 2,
@@ -39,7 +39,7 @@ class FoodHomepage extends React.Component {
     };
 
     return (
-      <div>
+      <div className="foodhome">
         <Navbar/>
         <div className="AllFDHomepage">
           <h2 className="mayI">How may I Serve You?</h2>
