@@ -14,7 +14,7 @@ import MainHomepage from "./Homepages/MainHomepage"
 import Navbar from "./Homepages/Navbar";
 import RandomMeal from "./FoodCategories/RandomMeal"
 import RandomDrink from "./DrinkCategories/RandomDrink"
-import Printer from "./Printer"
+import Printer from "./FoodCategories/Printer"
 
 
 

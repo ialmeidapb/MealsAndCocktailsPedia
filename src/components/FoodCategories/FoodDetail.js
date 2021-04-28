@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import axios from "axios";
+import Printer from "./Printer"
 
 
 
@@ -53,6 +54,8 @@ class FoodDetail extends Component{
             </div>
             <h3 className="text-left mt-2 mb-3">Instructions:</h3>
             <p className="text-justify">{this.state.food.strInstructions}</p>
+
+            <Printer food={this.state}/>
             
             </div>
 

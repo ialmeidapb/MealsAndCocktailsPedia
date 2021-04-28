@@ -15,8 +15,8 @@ function Navbar() {
             <li><Link to="/"><i class="fas fa-home"></i>Home</Link></li>
             <li><Link to="/foods"><i class="fas fa-utensils"></i>Meals</Link></li>
             <li><Link to="/drinks"><i class="fas fa-cocktail"></i>Drinks</Link></li>
-            <li><Link to="/randomfood"><i class="fas fa-address-book"></i>Cook me a Meal!</Link></li>
-            <li><Link to="/randomdrink"><i className="fas fa-map-pin"></i>Shake me a Drink!</Link></li>
+            <li><Link to="/randomfood"><i class="fas fa-spinner"></i>Cook me a Meal!</Link></li>
+            <li><Link to="/randomdrink"><i class="fas fa-spinner"></i>Shake me a Drink!</Link></li>
           </ul>
           <div className="social_media">
             <a target="_blank" href="https://www.linkedin.com/in/graziele-dantas-silveira-6330591aa/"><i class="fab fa-linkedin fa-lg"></i></a>

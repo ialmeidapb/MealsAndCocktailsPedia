@@ -14,6 +14,7 @@ class Drinks extends Component {
       const response = await axios.get(
         `https://www.thecocktaildb.com/api/json/v1/1/filter.php?a=${this.props.match.params.id}`
       );
+  
       console.log(response);
       this.setState({ drinks: [...response.data.drinks], originalDrinks: [...response.data.drinks] });
     } catch (err) {

@@ -1,11 +1,13 @@
 import React from 'react';
 import ReactToPrint from 'react-to-print';
 
-import ComponentToPrint from './ComponentToPrint';
+import ComponentToPrintDrink from './ComponentToPrintDrink';
 
-class Printer extends React.PureComponent {
+class PrinterDrink extends React.PureComponent {
+  
   render() {
     return (
+      
       <div>
         <ReactToPrint
           trigger={() => {
@@ -15,10 +17,12 @@ class Printer extends React.PureComponent {
           }}
           content={() => this.componentRef}
         />
-        <ComponentToPrint ref={el => (this.componentRef = el)} />
+        <div style={{ display: "none" }}> 
+        <ComponentToPrintDrink drink={this.props.drink} ref={el => (this.componentRef = el)} /></div>
+        
       </div>
     );
   }
 }
 
-export default Printer;
+export default PrinterDrink;
