@@ -39,14 +39,36 @@ class FoodHomepage extends React.Component {
     };
 
     return (
-      <div className="foodhome">
-        <Navbar/>
-        <div className="AllFDHomepage">
-          <h2 className="mayI">How may I Serve You?</h2>
+
+      <div className = "homeFD">
+        <Navbar className="bar" style={{ zIndex: 1 }} />
+
+        <div className="allFDHomepage" style={{ zIndex: 2 }}>
+          <h2 className="mayI">How can I Serve You?</h2>
+
 
           <div className="img-slider">
             <Slider {...settings}>
-              <div className="imgcard">
+
+            <div>
+                <Link to={`/foods/breakfast`}>
+                  <img src={breakfast} className="foodimg" alt="breakfast" />
+                  <div>
+                    <h5 className = "recipeFD">Breakfast Recipes</h5>
+                  </div>
+                </Link>
+              </div>
+
+            <div>
+                <Link to={`/foods/starter`}>
+                  <img src={starter} className="foodimg" alt="starter" />
+                  <div>
+                    <h5 className = "recipeFD">Starters</h5>
+                  </div>
+                </Link>
+              </div>
+
+              <div>
                 <Link to={`/foods/beef`}>
                   <img src={meat} className="foodimg" alt="meat food" />
                   <div>
@@ -123,23 +145,6 @@ class FoodHomepage extends React.Component {
                 </Link>
               </div>
 
-              <div>
-                <Link to={`/foods/breakfast`}>
-                  <img src={breakfast} className="foodimg" alt="breakfast" />
-                  <div>
-                    <h5 className = "recipeFD">Breakfast Recipes</h5>
-                  </div>
-                </Link>
-              </div>
-
-              <div>
-                <Link to={`/foods/starter`}>
-                  <img src={starter} className="foodimg" alt="starter" />
-                  <div>
-                    <h5 className = "foodRecipe">Starters</h5>
-                  </div>
-                </Link>
-              </div>
             </Slider>
           </div>
         </div>
