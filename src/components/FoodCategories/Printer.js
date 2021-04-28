@@ -1,7 +1,7 @@
-import React from 'react';
-import ReactToPrint from 'react-to-print';
+import React from "react";
+import ReactToPrint from "react-to-print";
 
-import ComponentToPrint from './ComponentToPrint';
+import ComponentToPrint from "./ComponentToPrint";
 
 class Printer extends React.PureComponent {
   
