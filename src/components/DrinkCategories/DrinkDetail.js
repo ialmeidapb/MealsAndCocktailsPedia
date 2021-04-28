@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import axios from "axios";
+import PrinterDrink from "./PrinterDrink"
 
 class DrinkDetail extends Component {
   state = {
@@ -85,13 +86,19 @@ class DrinkDetail extends Component {
                 {this.state.drink.strIngredient15}
               </li>
             </ul>
-          </div>
-          <h3 className="text-left mt-2 mb-3">Instructions:</h3>
-          <p className="text-justify">{this.state.drink.strInstructions}</p>
-        </div>
-      </div>
-    );
-  };
+            </div>
+            <h3 className="text-left mt-2 mb-3">Instructions:</h3>
+            <p className="text-justify">{this.state.drink.strInstructions}</p>
+            
+
+            <PrinterDrink drink={this.state}/>
+            </div>
+
+
+
+            </div>
+        )
+    }
 }
 
 export default DrinkDetail;

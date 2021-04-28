@@ -24,12 +24,13 @@ class FoodHomepage extends React.Component {
       arrows: true,
       infinite: true,
       slidesToShow: 2,
-      slidesToScroll: 1,
+      slidesToScroll: 2,
       vertical: true,
       verticalSwiping: true,
       swipeToSlide: true,
-      autoplay: true,
-      beforeChange: function (currentSlide, nextSlide) {
+      autoplay:true,
+      autoplaySpeed:4500,
+      beforeChange: function(currentSlide, nextSlide) {
         console.log("before change", currentSlide, nextSlide);
       },
       afterChange: function (currentSlide) {
