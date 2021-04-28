@@ -17,7 +17,7 @@ function MainHomepage() {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 1000, 
+    autoplaySpeed: 1000,
     speed: 10000,
     cssEase: "linear",
     arrows: false,
@@ -29,9 +29,9 @@ function MainHomepage() {
 
   return (
     <div className="AllMainHomepage">
-      <Navbar className="bar" style={{zIndex:1}} />
-      
-      <div className="MainHomepageNavbar" style={{zIndex:2}}>
+      <Navbar className="bar" style={{ zIndex: 1 }} />
+
+      <div className="MainHomepageNavbar" style={{ zIndex: 2 }}>
         <Slider {...settings}>
           <div className="MainImg">
             <img className="img" src={cooker} />

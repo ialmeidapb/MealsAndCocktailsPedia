@@ -1,32 +1,30 @@
-*{
-    padding: 0;
-    outline: 0;
-    box-sizing: border-box;
-    font-family: JosefinSlab, sans-serif;
-    
+* {
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+  font-family: JosefinSlab, sans-serif;
 }
 
-.img{
-    /* width: calc(100vw - 200px) !important; */
-    max-width: 100%;
-    height: auto;
+.img {
+  /* width: calc(100vw - 200px) !important; */
+  max-width: 100%;
+  height: auto;
 }
 
 .MainImg {
-    
-    object-fit: scale-down;
+  object-fit: scale-down;
 }
 
 .AllMainHomepage {
-    overflow: hidden;
+  overflow: hidden;
 }
 .MainHomepageNavbar {
-    overflow: none;
-    margin-left: 270px;
-    position: relative;
-    width: 100%;
+  overflow: none;
+  margin-left: 270px;
+  position: relative;
+  width: 100%;
 }
 
-.carousel{
-    position: absolute;
+.carousel {
+  position: absolute;
 }
