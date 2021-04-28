@@ -9,6 +9,7 @@ import seafood from "../../assets/images/food-img/seafood.png";
 import pork from "../../assets/images/food-img/pork.png";
 import vegetarian from "../../assets/images/food-img/vegetarian.png";
 import breakfast from "../../assets/images/food-img/breakfast.jpg";
+import starter from "../../assets/images/food-img/starters.png"
 import "./mainhomepage.css";
 import Navbar from "./Navbar";
 
@@ -100,8 +101,10 @@ class FoodHomepage extends React.Component {
               </div>
 
               <div>
+
                 <Link to={`/foods/pasta`}>
                   <img src={pasta} className="foodimg" alt="pasta food" />
+
                   <div>
                     <h5 className = "recipeFD">Pasta Recipes</h5>
                   </div>
@@ -109,8 +112,11 @@ class FoodHomepage extends React.Component {
               </div>
 
               <div>
+
                 <Link to={`/foods/vegetarian`}>
                   <img src={vegetarian} className="foodimg" alt="vetarian food" />
+
+
                   <div>
                     <h5 className = "recipeFD">Vegetarian Recipes</h5>
                   </div>
@@ -122,6 +128,15 @@ class FoodHomepage extends React.Component {
                   <img src={breakfast} className="foodimg" alt="breakfast" />
                   <div>
                     <h5 className = "recipeFD">Breakfast Recipes</h5>
+                  </div>
+                </Link>
+              </div>
+
+              <div>
+                <Link to={`/foods/starter`}>
+                  <img src={starter} className="foodimg" alt="starter" />
+                  <div>
+                    <h5 className = "foodRecipe">Starters</h5>
                   </div>
                 </Link>
               </div>
