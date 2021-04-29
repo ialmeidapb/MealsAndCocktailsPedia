@@ -32,7 +32,7 @@ class DrinkHomepage extends React.Component {
       <div className = "homeFD">
         <Navbar className="bar" style={{ zIndex: 1 }} />
 
-        <div className="allDrinkHomepage" style={{ zIndex: 2 }}>
+        <div className="allFDHomepage" style={{ zIndex: 2 }}>
           <h2 className="mayI">May I mix you... a Drink?</h2>
           <Slider {...settings}>
             <div className="imgcard">

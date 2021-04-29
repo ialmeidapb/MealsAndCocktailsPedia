@@ -23,7 +23,7 @@ class FoodHomepage extends React.Component {
       dots: false,
       arrows: true,
       infinite: true,
-      slidesToShow: 3,
+      slidesToShow: 2,
       slidesToScroll: 2,
       vertical: true,
       verticalSwiping: true,

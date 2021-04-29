@@ -30,16 +30,7 @@ a:hover, a:visited, a:link, a:active
   text-shadow: 1px 1px 2px black, 0 0 1em #146da1, 0 0 0.2em #146da1;
 }
 
-.canI {
-  font-family: amaticsc;
-  font-size: 40px;
-  padding: 6px;
-  text-align: center;
-  margin-right: 380px;
-  text-shadow: 1px 1px 2px black, 0 0 1em #146da1, 0 0 0.2em #146da1;
-}
-
-.mayI {
+.canI, .mayI {
   font-family: amaticsc;
   font-size: 40px;
   padding: 6px;
@@ -81,10 +72,14 @@ a:hover, a:visited, a:link, a:active
 }
 
 .allMeals {
+  overflow-x: hidden;
   margin-left: 270px;
-  overflow: hidden;
+  height: 100vh;
+  width: calc(100vw - 270px);
   background-image: url("../../assets/images/bluewall.jpg");
-  background-size: contain;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .carousel {
@@ -98,20 +93,24 @@ a:hover, a:visited, a:link, a:active
 }
 
 .allFDHomepage {
+  overflow-x: hidden;
+  height: 100vh;
+  width: calc(100vw - 270px);
   background-image: url("../../assets/images/bluewall.jpg");
   background-size: cover;
-  background-repeat:unset;
+  background-position: center;
+  background-repeat: no-repeat;
   margin-left: 270px;
-  position: relative;
   width: 100%;
 }
 
-.allDrinkHomepage{
-  background-image: url("../../assets/images/bluewall.jpg");
-  background-size: contain;
-  margin-left: 270px;
-  position: relative;
-  width: 100%;
+.carousel {
+  position: absolute;
+}
+
+.foodimg {
+  max-width: 75%;
+  max-height: auto;
 }
 
 .homeFD{
