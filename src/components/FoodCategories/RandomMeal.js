@@ -1,5 +1,9 @@
 import React, { Component } from "react";
 import axios from "axios";
+import RandomPrinter from "./RandomPrinter"
+
+import "../Homepages/verticalNavbar.css"
+import VerticalNavbar from "../Homepages/VerticalNavbar"
 
 class RandomMeal extends Component {
   state = {
@@ -21,90 +25,106 @@ class RandomMeal extends Component {
 
   render() {
     return (
-      <div>
-        <div className="container mt-5 text-center">
-          <img
-            className="m-5"
-            src={this.state.randomFood.strMealThumb}
-            width="400px"
-          ></img>
-          <h1 className="mt-5">{this.state.randomFood.strMeal}</h1>
-          <h4 className="mb-5">Origin: {this.state.randomFood.strArea} </h4>
-
-          <div className="text-left mt-2 mb-2">
-            <ul>
-              <h3>Ingredients:</h3>
-              {/* <li>{this.state.randomFood[`strIngredient${indice}`]}</li> */}
-              <li>
-                {this.state.randomFood.strMeasure1}{" "}
-                {this.state.randomFood.strIngredient1}
-              </li>
-              <li>
-                {this.state.randomFood.strMeasure2}{" "}
-                {this.state.randomFood.strIngredient2}
-              </li>
-              <li>
-                {this.state.randomFood.strMeasure3}{" "}
-                {this.state.randomFood.strIngredient3}
-              </li>
-              <li>
-                {this.state.randomFood.strMeasure4}{" "}
-                {this.state.randomFood.strIngredient4}
-              </li>
-              <li>
-                {this.state.randomFood.strMeasure5}{" "}
-                {this.state.randomFood.strIngredient5}
-              </li>
-              <li>
-                {this.state.randomFood.strMeasure6}{" "}
-                {this.state.randomFood.strIngredient6}
-              </li>
-              <li>
-                {this.state.randomFood.strMeasure7}{" "}
-                {this.state.randomFood.strIngredient7}
-              </li>
-              <li>
-                {this.state.randomFood.strMeasure8}{" "}
-                {this.state.randomFood.strIngredient8}
-              </li>
-              <li>
-                {this.state.randomFood.strMeasure9}{" "}
-                {this.state.randomFood.strIngredient9}
-              </li>
-              <li>
-                {this.state.randomFood.strMeasure10}{" "}
-                {this.state.randomFood.strIngredient10}
-              </li>
-              <li>
-                {this.state.randomFood.strMeasure11}{" "}
-                {this.state.randomFood.strIngredient11}
-              </li>
-              <li>
-                {this.state.randomFood.strMeasure12}{" "}
-                {this.state.randomFood.strIngredient12}
-              </li>
-              <li>
-                {this.state.randomFood.strMeasure13}{" "}
-                {this.state.randomFood.strIngredient13}
-              </li>
-              <li>
-                {this.state.randomFood.strMeasure14}{" "}
-                {this.state.randomFood.strIngredient14}
-              </li>
-              <li>
-                {this.state.randomFood.strMeasure15}{" "}
-                {this.state.randomFood.strIngredient15}
-              </li>
-            </ul>
+<div className="allindividualFD">
+        <VerticalNavbar />
+        <div className="individualFD">
+          <div className="container mt-2 text-center">
+            <div className="mb-5">
+              <h1 className="individualFDText">
+                {this.state.randomFood.strMeal}
+              </h1>
+              <h4 className="individualFDText">
+                Origin: {this.state.randomFood.strArea}{" "}
+              </h4>
+            </div>
+            <div className="imgIngredients">
+              <div>
+                <img
+                  className="imgFDDetail"
+                  src={this.state.randomFood.strMealThumb}
+                  width="400px"
+                ></img>
+              </div>
+              <div>
+                <ul className="text-left mt-2 mb-2">
+                  <h3 className="individualFDText">Ingredients:</h3>
+                  {/* <li>{this.state.randomFood[`strIngredient${indice}`]}</li> */}
+                  <li className="individualFDText">
+                    {this.state.randomFood.strMeasure1}{" "}
+                    {this.state.randomFood.strIngredient1}
+                  </li>
+                  <li className="individualFDText">
+                    {this.state.randomFood.strMeasure2}{" "}
+                    {this.state.randomFood.strIngredient2}
+                  </li>
+                  <li className="individualFDText">
+                    {this.state.randomFood.strMeasure3}{" "}
+                    {this.state.randomFood.strIngredient3}
+                  </li>
+                  <li className="individualFDText">
+                    {this.state.randomFood.strMeasure4}{" "}
+                    {this.state.randomFood.strIngredient4}
+                  </li>
+                  <li className="individualFDText">
+                    {this.state.randomFood.strMeasure5}{" "}
+                    {this.state.randomFood.strIngredient5}
+                  </li>
+                  <li className="individualFDText">
+                    {this.state.randomFood.strMeasure6}{" "}
+                    {this.state.randomFood.strIngredient6}
+                  </li>
+                  <li className="individualFDText">
+                    {this.state.randomFood.strMeasure7}{" "}
+                    {this.state.randomFood.strIngredient7}
+                  </li>
+                  <li className="individualFDText">
+                    {this.state.randomFood.strMeasure8}{" "}
+                    {this.state.randomFood.strIngredient8}
+                  </li>
+                  <li className="individualFDText">
+                    {this.state.randomFood.strMeasure9}{" "}
+                    {this.state.randomFood.strIngredient9}
+                  </li>
+                  <li className="individualFDText">
+                    {this.state.randomFood.strMeasure10}{" "}
+                    {this.state.randomFood.strIngredient10}
+                  </li>
+                  <li className="individualFDText">
+                    {this.state.randomFood.strMeasure11}{" "}
+                    {this.state.randomFood.strIngredient11}
+                  </li>
+                  <li className="individualFDText">
+                    {this.state.randomFood.strMeasure12}{" "}
+                    {this.state.randomFood.strIngredient12}
+                  </li>
+                  <li className="individualFDText">
+                    {this.state.randomFood.strMeasure13}{" "}
+                    {this.state.randomFood.strIngredient13}
+                  </li>
+                  <li className="individualFDText">
+                    {this.state.randomFood.strMeasure14}{" "}
+                    {this.state.randomFood.strIngredient14}
+                  </li>
+                  <li className="individualFDText">
+                    {this.state.randomFood.strMeasure15}{" "}
+                    {this.state.randomFood.strIngredient15}
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div className="instructionsDiv">
+              <h3 className="textH3 mt-2 mb-3">Instructions:</h3>
+              <p className="textP">{this.state.randomFood.strInstructions}</p>
+            </div>
+          
+            <div><RandomPrinter className="printer" food={this.state} /></div>
           </div>
-          <h3 className="text-left mt-2 mb-3">Instructions:</h3>
-          <p className="text-justify">
-            {this.state.randomFood.strInstructions}
-          </p>
         </div>
       </div>
     );
   }
 }
 
+
+ 
 export default RandomMeal;
