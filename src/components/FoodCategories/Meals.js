@@ -47,14 +47,12 @@ class Meals extends Component {
         <Navbar className="bar" style={{ zIndex: 1 }} />
 
         <div className="allMeals">
-          <div className="container mt-5" style={{ zIndex: 2 }}>
-            <TextInput className="search"
+          <div className="search container mt-5" style={{ zIndex: 2 }}>
+            <p>Search</p>
+            <TextInput
               name="searchedItem"
               value={this.state.searchedItem}
               id="searchedItem"
-              // fontFamily={"amaticsc"}
-              // theme={{ fonts: { regular: 'amaticsc' } }}
-              label="Search"
               onChange={this.handleChange}
             />
           </div>

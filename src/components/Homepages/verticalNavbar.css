@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap");
+@font-face {
+  font-family: amaticsc;
+  src: url(../../assets/fonts/amaticsc.woff2);
+}
+@font-face {
+  font-family: bitechocolate;
+  src: url(../../assets/fonts/bitechocolate.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Josefin Sans", sans-serif;
+    color: #BDB8D7;
+    font-size: 17px;
+    text-shadow: 1px 1px 2px black, 0 0 1em #146da1, 0 0 0.2em #146da1;
+  }
+
+  .navbar {
+      display: flex;
+      justify-content: center;
+  }
+
+  .fas {
+      color: white;
+  }
+
+  .allindividualFD{
+    overflow: hidden;
+    background-image: url("../../assets/images/bluewall.jpg");
+    background-size: cover;
+  }
+
+  .individualFD {
+    margin-bottom: 50px;
+  }
+
+  .individualFDText {
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 1em #146da1, 0 0 0.2em #146da1;
+  }
+
+  .imgFDDetail {
+    border-radius: 10%;
+    margin-right: 30px;
+    max-width: 400px;
+  }
+
+  .imgIngredients {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .instructionsDiv {
+      padding-top: 30px;
+      line-height: 25px;
+      margin-bottom: 50px;
+  }
+
+  .textH3, .textP {
+      color: white;
+      text-shadow: 1px 1px 2px black, 1 1 1em #146da1, 0  0.2em #146da1;
+      text-align: justify;
+  }
+  
+  .printer, a:hover, a:visited, a:link, a:active {
+    text-decoration: none;
+    color: white;
+  }

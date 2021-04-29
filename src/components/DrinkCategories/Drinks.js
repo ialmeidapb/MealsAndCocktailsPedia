@@ -51,12 +51,12 @@ class Drinks extends Component {
         <Navbar className="bar" style={{ zIndex: 1 }} />
 
         <div className="allMeals" style={{ zIndex: 2 }}>
-          <div className="container mt-5">
+          <div className=" search container mt-5">
+            <p>Search</p>
             <TextInput
               name="searchedItem"
               value={this.state.searchedItem}
               id="searchedItem"
-              label="Search"
               onChange={this.handleChange}
             />
           </div>
@@ -76,10 +76,7 @@ class Drinks extends Component {
                       alt={drink.strDrink}
                     />
                     <div className="card-img-overlay">
-                      <h4 className = "textCard"
-                      >
-                        {drink.strDrink}
-                      </h4>
+                      <h4 className="textCard">{drink.strDrink}</h4>
                     </div>
                   </Link>
                 </div>
