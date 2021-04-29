@@ -27,6 +27,7 @@ class RandomMeal extends Component {
     return (
 <div className="allindividualFD">
         <VerticalNavbar />
+
         <div className="individualFD">
           <div className="container mt-2 text-center">
             <div className="mb-5">
@@ -42,7 +43,6 @@ class RandomMeal extends Component {
                 <img
                   className="imgFDDetail"
                   src={this.state.randomFood.strMealThumb}
-                  width="400px"
                 ></img>
               </div>
               <div>

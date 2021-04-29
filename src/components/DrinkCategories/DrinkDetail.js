@@ -37,6 +37,7 @@ class DrinkDetail extends Component {
     return (
       <div className="allindividualFD">
         <VerticalNavbar />
+
         <div className="individualFD">
           <div className="container mt-2 text-center">
             <div className="mb-5">
@@ -51,7 +52,6 @@ class DrinkDetail extends Component {
                 <img
                   className="imgFDDetail"
                   src={this.state.drink.strDrinkThumb}
-                  width="400px"
                 ></img>
               </div>
               <div>
