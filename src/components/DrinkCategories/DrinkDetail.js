@@ -10,6 +10,7 @@ class DrinkDetail extends Component {
   };
 
   componentDidMount = async () => {
+  
     console.log(this.props.match.params.code);
     try {
       const response = await axios.get(
@@ -22,7 +23,17 @@ class DrinkDetail extends Component {
     }
   };
 
+  // handleIngredients = ()=>{
+  //   let ingredients = []
+  //   if(this.state.drink){
+  //     for(let ing in this.state.drink)
+  //     {console.log(ing)}
+  //   }
+
+  // }
+
   render = () => {
+    // this.handleIngredients()
     return (
       <div className="allindividualFD">
         <VerticalNavbar />
