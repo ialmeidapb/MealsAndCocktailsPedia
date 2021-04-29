@@ -39,15 +39,19 @@
     margin-bottom: 50px;
   }
 
-  .individualFDText {
+  .individualFDText, h3 {
     color: white;
     text-shadow: 1px 1px 2px black, 0 0 1em #146da1, 0 0 0.2em #146da1;
+    line-height: 5px;
+  }
+  .individualFDText, li {
+    line-height: 25px;
   }
 
   .imgFDDetail {
     border-radius: 10%;
     margin-right: 30px;
-    max-width: 400px;
+    max-width: 350px;
   }
 
   .imgIngredients {
@@ -62,13 +66,33 @@
       margin-bottom: 50px;
   }
 
-  .textH3, .textP {
+  .h3Text, .textP {
       color: white;
       text-shadow: 1px 1px 2px black, 1 1 1em #146da1, 0  0.2em #146da1;
       text-align: justify;
   }
   
   .printer, a:hover, a:visited, a:link, a:active {
+    font-family: amaticsc;
+    font-size: 22px;
+    font-weight: 500;
     text-decoration: none;
     color: white;
+  }
+
+  .h1Text{
+    font-family: amaticsc;
+    font-size: 60px;
+    line-height: 50px;
+  }
+
+  .h4Text {
+    font-family: amaticsc;
+    font-size: 30px;
+  }
+
+  .h3Text {
+    font-family: amaticsc;
+    font-size: 40px;
+    line-height: 40px;
   }

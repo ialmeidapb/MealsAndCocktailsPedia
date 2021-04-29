@@ -29,8 +29,8 @@ class DrinkDetail extends Component {
         <div className="individualFD">
           <div className="container mt-2 text-center">
             <div className="mb-5">
-              <h1 className="individualFDText">{this.state.drink.strDrink}</h1>
-              <h4 className="individualFDText">
+              <h1 className="h1Text individualFDText">{this.state.drink.strDrink}</h1>
+              <h4 className="h4Text individualFDText">
                 Recommended Glass: {this.state.drink.strGlass}
               </h4>
             </div>
@@ -45,7 +45,7 @@ class DrinkDetail extends Component {
               </div>
               <div>
                 <ul className="text-left mt-2 mb-2">
-                  <h3 className="individualFDText">Ingredients:</h3>
+                  <h3 className="h3Text">Ingredients:</h3>
                   {/* <li>{this.state.drink[`strIngredient${indice}`]}</li> */}
                   <li className="individualFDText">
                     {this.state.drink.strMeasure1}{" "}
@@ -112,7 +112,7 @@ class DrinkDetail extends Component {
             </div>
 
             <div className="instructionsDiv">
-            <h3 className="textH3 mt-2 mb-3">Instructions:</h3>
+            <h3 className="h3Text mt-2">Instructions:</h3>
             <p className="textP">{this.state.drink.strInstructions}</p>
             </div>
 

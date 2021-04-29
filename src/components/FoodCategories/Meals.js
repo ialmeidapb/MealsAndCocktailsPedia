@@ -45,7 +45,6 @@ class Meals extends Component {
     return (
       <div>
         <Navbar className="bar" style={{ zIndex: 1 }} />
-
         <div className="allMeals">
           <div className="search container mt-5" style={{ zIndex: 2 }}>
             <p>Search</p>
