@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import axios from "axios";
 import "../Homepages/verticalNavbar.css";
 import VerticalNavbar from "../Homepages/VerticalNavbar"
+import RandomDrinkPrinter from "./RandomDrinkPrinter"
 
 class RandomDrink extends Component {
   state = {
@@ -115,7 +116,7 @@ class RandomDrink extends Component {
             <p className="textP">{this.state.randomDrink.strInstructions}</p>
             </div>
 
-
+            <div><RandomDrinkPrinter className="printer" drink={this.state} /></div>
            
           </div>
         </div>
