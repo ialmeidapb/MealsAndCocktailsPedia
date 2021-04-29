@@ -12,6 +12,7 @@ function TextInput(props) {
         name={props.name}
         type="text"
         className="form-control"
+        style={{backgroundColor:"transparent", color:"white"}}
         id={props.id}
         value={props.value}
         onChange={props.onChange}
