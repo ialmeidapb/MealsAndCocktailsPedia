@@ -21,6 +21,7 @@
   font-family: amaticsc;
   font-size: 60px;
   color: #BDB8D7;
+  text-shadow: 1px 1px 2px black, 0 0 1em #146da1, 0 0 0.2em #146da1;
 }
 
 .wrapper {

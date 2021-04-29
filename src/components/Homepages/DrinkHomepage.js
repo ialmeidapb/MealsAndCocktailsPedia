@@ -32,14 +32,14 @@ class DrinkHomepage extends React.Component {
       <div className = "homeFD">
         <Navbar className="bar" style={{ zIndex: 1 }} />
 
-        <div className="allFDHomepage" style={{ zIndex: 2 }}>
-          <h2 className="mayI">May I Serve you... a Drink?</h2>
+        <div className="allDrinkHomepage" style={{ zIndex: 2 }}>
+          <h2 className="mayI">May I mix you... a Drink?</h2>
           <Slider {...settings}>
             <div className="imgcard">
               <Link to={`/drinks/Alcoholic`}>
                 <img src={Alcoholic} className="foodimg" alt="meat" />
                 <div>
-                  <h5 className = "recipeFD">Alcoholic Cocktails</h5>
+                  <h5 className = "recipeDrinks">Alcoholic Cocktails</h5>
                 </div>
               </Link>
             </div>
@@ -48,7 +48,7 @@ class DrinkHomepage extends React.Component {
               <Link to={`/drinks/Non_Alcoholic`}>
                 <img src={NonAlcoholic} className="foodimg" alt="chicken" />
                 <div>
-                  <h5 className = "recipeFD">Non-Alcoholic Cocktails</h5>
+                  <h5 className = "recipeDrinks">Non-Alcoholic Cocktails</h5>
                 </div>
               </Link>
             </div>

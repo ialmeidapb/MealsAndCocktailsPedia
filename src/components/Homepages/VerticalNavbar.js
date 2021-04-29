@@ -1,12 +1,13 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
+import "./verticalNavbar.css"
 
 
 function VerticalNavbar(){
     return(
         <div>
-            <nav class="navbar navbar-light bg-primary ">
-            <Link className="navbar-brand" to="/"><i className="fas fa-home" style={{ color: "white" }}></i></Link>
+            <nav className="navbar navbar-transparent">
+            <Link className="navbar-brand" to="/"><i className="fas fa-home"></i></Link>
             
             </nav>
         </div>

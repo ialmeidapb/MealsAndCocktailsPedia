@@ -1,6 +1,5 @@
 import React from "react";
 import { BrowserRouter, Route, Link } from "react-router-dom";
-import bluewall from "../../assets/images/bluewall.jpg";
 import "./navbar.css";
 
 function Navbar() {
@@ -23,7 +22,7 @@ function Navbar() {
               </li>
               <li>
                 <Link to="/drinks">
-                  <i class="fas fa-cocktail"></i>Drinks
+                  <i class="fas fa-cocktail"></i>Cocktails
                 </Link>
               </li>
               <li>
@@ -33,7 +32,7 @@ function Navbar() {
               </li>
               <li>
                 <Link to="/randomdrink">
-                  <i class="fas fa-spinner"></i>Shake me a Drink!
+                  <i class="fas fa-spinner"></i>Shake me a Cocktail!
                 </Link>
               </li>
             </ul>

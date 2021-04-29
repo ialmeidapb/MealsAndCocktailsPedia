@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import axios from "axios";
 import Printer from "./Printer";
-import "../Homepages/mainhomepage.css";
+import VerticalNavbar from "../Homepages/VerticalNavbar";
+import "../Homepages/verticalNavbar.css"
 
 class FoodDetail extends Component {
   state = {
@@ -24,15 +25,16 @@ class FoodDetail extends Component {
   render = () => {
     return (
       <div className="allindividualFD">
+        <VerticalNavbar/>
         <div className="individualFD">
-          <div className="container mt-5 text-center">
-            <div>
+          <div className="container mt-2 text-center">
+            <div className="mb-5">
               <h1 className="individualFDText">{this.state.food.strMeal}</h1>
               <h4 className="individualFDText">Origin: {this.state.food.strArea} </h4>
             </div>
             <div className="imgIngredients">
               <div>
-              <img className="imgFoodDetail"
+              <img className="imgFDDetail"
                 src={this.state.food.strMealThumb}
               ></img>
               </div>
@@ -94,9 +96,10 @@ class FoodDetail extends Component {
               </ul>
               </div>
             </div>
-            <div>
-              <h3 className="text-left mt-2 mb-3">Instructions:</h3>
-              <p className="text-justify">{this.state.food.strInstructions}</p>
+            
+            <div className="instructionsDiv">
+              <h3 className="textH3 mt-2 mb-3">Instructions:</h3>
+              <p className="textP">{this.state.food.strInstructions}</p>
             </div>
 
             <div>
