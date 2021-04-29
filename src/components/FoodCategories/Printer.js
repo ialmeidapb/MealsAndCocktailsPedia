@@ -13,7 +13,7 @@ class Printer extends React.PureComponent {
           trigger={() => {
             // NOTE: could just as easily return <SomeComponent />. Do NOT pass an `onClick` prop
             // to the root node of the returned component as it will be overwritten.
-            return <a href="#"><i className="fas fa-print"></i>Click here to Print!</a>;
+            return <a href="#"><i className="fas fa-print"></i> PRINT!</a>;
           }}
           content={() => this.componentRef}
         />
