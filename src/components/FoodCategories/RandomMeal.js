@@ -1,7 +1,9 @@
 import React, { Component } from "react";
 import axios from "axios";
-import VerticalNavbar from "../Homepages/VerticalNavbar";
-import "../Homepages/verticalNavbar.css";
+import RandomPrinter from "./RandomPrinter"
+
+import "../Homepages/verticalNavbar.css"
+import VerticalNavbar from "../Homepages/VerticalNavbar"
 
 class RandomMeal extends Component {
   state = {
@@ -23,7 +25,7 @@ class RandomMeal extends Component {
 
   render() {
     return (
-      <div className="allindividualFD">
+<div className="allindividualFD">
         <VerticalNavbar />
         <div className="individualFD">
           <div className="container mt-2 text-center">
@@ -35,7 +37,6 @@ class RandomMeal extends Component {
                 Origin: {this.state.randomFood.strArea}{" "}
               </h4>
             </div>
-
             <div className="imgIngredients">
               <div>
                 <img
@@ -44,7 +45,6 @@ class RandomMeal extends Component {
                   width="400px"
                 ></img>
               </div>
-
               <div>
                 <ul className="text-left mt-2 mb-2">
                   <h3 className="h3Text">Ingredients:</h3>
@@ -112,11 +112,12 @@ class RandomMeal extends Component {
                 </ul>
               </div>
             </div>
-
             <div className="instructionsDiv">
               <h3 className="h3Text mt-2">Instructions:</h3>
               <p className="textP">{this.state.randomFood.strInstructions}</p>
             </div>
+          
+            <div><RandomPrinter className="printer" food={this.state} /></div>
           </div>
         </div>
       </div>
@@ -124,4 +125,6 @@ class RandomMeal extends Component {
   }
 }
 
+
+ 
 export default RandomMeal;

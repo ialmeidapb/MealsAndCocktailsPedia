@@ -46,6 +46,7 @@ a:hover, a:visited, a:link, a:active
   margin-top: 5px;
   text-decoration: none;
   text-shadow: 1px 1px 2px black, 0 0 1em #146da1, 0 0 0.2em #146da1;
+  display: inline-block;
 }
 
 .recipeDrinks {
@@ -79,6 +80,16 @@ a:hover, a:visited, a:link, a:active
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.carousel {
+  position: absolute;
+}
+
+.foodimg {
+  max-width: 75%;
+  max-height: auto;
+  display: inline-block;
 }
 
 .allFDHomepage {
