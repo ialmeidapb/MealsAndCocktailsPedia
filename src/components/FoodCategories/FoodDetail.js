@@ -26,6 +26,7 @@ class FoodDetail extends Component {
     return (
       <div className="allindividualFD">
         <VerticalNavbar/>
+        
         <div className="individualFD">
           <div className="container mt-2 text-center">
             <div className="mb-5">
