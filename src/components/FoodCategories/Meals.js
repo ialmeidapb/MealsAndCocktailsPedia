@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
 import TextInput from "../TextInput";
-// import amaticsc from "../../assets/fonts/amaticsc.woff2"
 
 import "../Homepages/mainhomepage.css";
 import Navbar from "../Homepages/Navbar";
@@ -48,7 +47,7 @@ class Meals extends Component {
         <div className="allMeals">
           <div className="search container mt-5" style={{ zIndex: 2 }}>
             <p>Search</p>
-            <TextInput
+            <TextInput 
               name="searchedItem"
               value={this.state.searchedItem}
               id="searchedItem"

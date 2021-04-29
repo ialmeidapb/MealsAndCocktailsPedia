@@ -111,7 +111,6 @@ class FoodDetail extends Component {
                 </ul>
               </div>
             </div>
-
             <div className="instructionsDiv">
               <h3 className="h3Text mt-2">Instructions:</h3>
               <p className="textP">{this.state.food.strInstructions}</p>

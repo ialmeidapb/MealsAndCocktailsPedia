@@ -3,8 +3,7 @@ import "./Homepages/mainhomepage.css"
 
 function TextInput(props) {
   return (
-   <div>
-      <div className="mb-3">
+      <div>
       <label htmlFor={props.id} className="form-label">
         {props.label}
       </label>
@@ -12,12 +11,12 @@ function TextInput(props) {
         name={props.name}
         type="text"
         className="form-control"
+        style={{backgroundColor:"transparent", color:"white"}}
         id={props.id}
         value={props.value}
         onChange={props.onChange}
       />
     </div>
-   </div>
   );
 }
 

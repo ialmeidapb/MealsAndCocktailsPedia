@@ -16,16 +16,22 @@
   src: url(../../assets/fonts/amaticsc.woff2);
 }
 
+@font-face {
+  font-family: soulsignature;
+  src: url(../../assets/fonts/soulsignature.ttf);
+}
+
 a:hover, a:visited, a:link, a:active
 {
     text-decoration: none;
 }
 
-.search p {
+.search, p {
   font-family: amaticsc;
+  color: white;
   font-size: 30px;
   text-align: center;
-  margin: 0;
+  margin-top: 15px;
   line-height: 0;
   text-shadow: 1px 1px 2px black, 0 0 1em #146da1, 0 0 0.2em #146da1;
 }
@@ -33,7 +39,7 @@ a:hover, a:visited, a:link, a:active
 .canI, .mayI {
   font-family: amaticsc;
   font-size: 40px;
-  padding: 6px;
+  padding: 5px;
   text-align: center;
   margin-right: 380px;
   text-shadow: 1px 1px 2px black, 0 0 1em #146da1, 0 0 0.2em #146da1;
@@ -41,9 +47,9 @@ a:hover, a:visited, a:link, a:active
 
 .recipeFoods, .recipeDrinks {
   font-family: bitechocolate;
-  font-size: 15px;
-  padding: 15px;
-  margin-top: 5px;
+  font-size: 14px;
+  padding: 14px;
+  margin-top: 3px;
   text-decoration: none;
   text-shadow: 1px 1px 2px black, 0 0 1em #146da1, 0 0 0.2em #146da1;
   display: inline-block;
@@ -80,10 +86,6 @@ a:hover, a:visited, a:link, a:active
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-}
-
-.carousel {
-  position: absolute;
 }
 
 .foodimg {
@@ -123,8 +125,8 @@ a:hover, a:visited, a:link, a:active
   text-align: center;
   text-shadow: 1px 1px 2px black, 0 0 1em #146da1, 0 0 0.2em #146da1;
   color: white;
-  font-family: bitechocolate;
-  font-size: 19px;
+  font-family: soulsignature;
+  font-size: 40px;
   border: 5;
   line-height: 35px;
 }
