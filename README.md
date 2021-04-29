@@ -1,8 +1,9 @@
 # Meals & Cocktails
 
 Our project is based in React.JS, using an API data thru Axios. Join us and let's discover new recipes. Only for academic and training purposes!
-[Click here to Discover!](https://mealsandcocktails.netlify.app/)
-[Click here for more info.](https://www.canva.com/design/DAEdAWv0Irs/share/preview?token=IHpcFbvE8rRWRdaEMaviBg&role=EDITOR&utm_content=DAEdAWv0Irs&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton)
+- [Click here to Discover!](https://mealsandcocktails.netlify.app/)
+
+- [Click here for more info.](https://www.canva.com/design/DAEdAWv0Irs/share/preview?token=IHpcFbvE8rRWRdaEMaviBg&role=EDITOR&utm_content=DAEdAWv0Irs&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton)
 
 
 ## Meals
