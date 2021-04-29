@@ -21,7 +21,7 @@ class FoodHomepage extends React.Component {
   render = () => {
     const settings = {
       dots: false,
-      arrows: true,
+      arrows: false,
       infinite: true,
       slidesToShow: 2,
       slidesToScroll: 2,
