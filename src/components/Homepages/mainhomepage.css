@@ -66,6 +66,35 @@ a:hover, a:visited, a:link, a:active
   background-size: contain;
 }
 
+.allindividualFD{
+  overflow: hidden;
+  background-image: url("../../assets/images/bluewall.jpg");
+  background-size: cover;
+
+}
+
+.individualFD {
+  margin-bottom: 50px;
+}
+
+.imgIngredients {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.imgFoodDetail {
+  border-radius: 10%;
+  margin-right: 30px;
+  max-width: 400px;
+}
+
+.individualFDText {
+  color: white;
+  text-shadow: 1px 1px 2px black, 0 0 1em #146da1, 0 0 0.2em #146da1;
+}
+
 .carousel {
   position: absolute;
 }
