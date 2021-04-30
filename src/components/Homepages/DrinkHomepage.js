@@ -29,7 +29,7 @@ class DrinkHomepage extends React.Component {
     };
 
     return (
-      <div className = "homeFD">
+      <div className="homeFD">
         <Navbar className="bar" style={{ zIndex: 1 }} />
 
         <div className="allFDHomepage" style={{ zIndex: 2 }}>
@@ -39,7 +39,7 @@ class DrinkHomepage extends React.Component {
               <Link to={`/drinks/Alcoholic`}>
                 <img src={Alcoholic} className="foodimg" alt="meat" />
                 <div>
-                  <h5 className = "recipeDrinks">Alcoholic Cocktails</h5>
+                  <h5 className="recipeDrinks">Alcoholic Cocktails</h5>
                 </div>
               </Link>
             </div>
@@ -48,7 +48,7 @@ class DrinkHomepage extends React.Component {
               <Link to={`/drinks/Non_Alcoholic`}>
                 <img src={NonAlcoholic} className="foodimg" alt="chicken" />
                 <div>
-                  <h5 className = "recipeDrinks">Non-Alcoholic Cocktails</h5>
+                  <h5 className="recipeDrinks">Non-Alcoholic Cocktails</h5>
                 </div>
               </Link>
             </div>

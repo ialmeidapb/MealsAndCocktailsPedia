@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import axios from "axios";
-import RandomPrinter from "./RandomPrinter"
+import RandomPrinter from "./RandomPrinter";
 
-import "../Homepages/verticalNavbar.css"
-import VerticalNavbar from "../Homepages/VerticalNavbar"
+import "../Homepages/verticalNavbar.css";
+import VerticalNavbar from "../Homepages/VerticalNavbar";
 
 class RandomMeal extends Component {
   state = {
@@ -23,9 +23,37 @@ class RandomMeal extends Component {
     }
   };
 
+  handleIngredients = () => {
+    let item = {};
+    let n = 0;
+
+    if (this.state.randomFood) {
+      let ingredients = Object.entries(this.state.randomFood).filter(
+        (x) =>
+          (x[0].includes("strIngredient") || x[0].includes("strMeasure")) &&
+          x[1] !== null &&
+          x[1] !== " " &&
+          x[1] !== ""
+      );
+      console.log(ingredients);
+      for (let i = 0; i < ingredients.length; i++) {
+        item[ingredients[i][0]] = ingredients[i][1];
+      }
+
+      n = Math.floor(ingredients.length / 2);
+    }
+    return new Array(n).fill(1).map((y, i) => {
+      return (
+        <li className="individualFDText">
+          {item[`strMeasure${i + 1}`]} {item[`strIngredient${i + 1}`]}
+        </li>
+      );
+    });
+  };
+
   render() {
     return (
-<div className="allindividualFD">
+      <div className="allindividualFD">
         <VerticalNavbar />
 
         <div className="individualFD">
@@ -48,67 +76,7 @@ class RandomMeal extends Component {
               <div>
                 <ul className="text-left mt-2 mb-2">
                   <h3 className="h3Text">Ingredients:</h3>
-                  {/* <li>{this.state.randomFood[`strIngredient${indice}`]}</li> */}
-                  <li className="individualFDText">
-                    {this.state.randomFood.strMeasure1}{" "}
-                    {this.state.randomFood.strIngredient1}
-                  </li>
-                  <li className="individualFDText">
-                    {this.state.randomFood.strMeasure2}{" "}
-                    {this.state.randomFood.strIngredient2}
-                  </li>
-                  <li className="individualFDText">
-                    {this.state.randomFood.strMeasure3}{" "}
-                    {this.state.randomFood.strIngredient3}
-                  </li>
-                  <li className="individualFDText">
-                    {this.state.randomFood.strMeasure4}{" "}
-                    {this.state.randomFood.strIngredient4}
-                  </li>
-                  <li className="individualFDText">
-                    {this.state.randomFood.strMeasure5}{" "}
-                    {this.state.randomFood.strIngredient5}
-                  </li>
-                  <li className="individualFDText">
-                    {this.state.randomFood.strMeasure6}{" "}
-                    {this.state.randomFood.strIngredient6}
-                  </li>
-                  <li className="individualFDText">
-                    {this.state.randomFood.strMeasure7}{" "}
-                    {this.state.randomFood.strIngredient7}
-                  </li>
-                  <li className="individualFDText">
-                    {this.state.randomFood.strMeasure8}{" "}
-                    {this.state.randomFood.strIngredient8}
-                  </li>
-                  <li className="individualFDText">
-                    {this.state.randomFood.strMeasure9}{" "}
-                    {this.state.randomFood.strIngredient9}
-                  </li>
-                  <li className="individualFDText">
-                    {this.state.randomFood.strMeasure10}{" "}
-                    {this.state.randomFood.strIngredient10}
-                  </li>
-                  <li className="individualFDText">
-                    {this.state.randomFood.strMeasure11}{" "}
-                    {this.state.randomFood.strIngredient11}
-                  </li>
-                  <li className="individualFDText">
-                    {this.state.randomFood.strMeasure12}{" "}
-                    {this.state.randomFood.strIngredient12}
-                  </li>
-                  <li className="individualFDText">
-                    {this.state.randomFood.strMeasure13}{" "}
-                    {this.state.randomFood.strIngredient13}
-                  </li>
-                  <li className="individualFDText">
-                    {this.state.randomFood.strMeasure14}{" "}
-                    {this.state.randomFood.strIngredient14}
-                  </li>
-                  <li className="individualFDText">
-                    {this.state.randomFood.strMeasure15}{" "}
-                    {this.state.randomFood.strIngredient15}
-                  </li>
+                  {this.handleIngredients()}
                 </ul>
               </div>
             </div>
@@ -116,8 +84,10 @@ class RandomMeal extends Component {
               <h3 className="h3Text mt-2">Instructions:</h3>
               <p className="textP">{this.state.randomFood.strInstructions}</p>
             </div>
-          
-            <div><RandomPrinter className="printer" food={this.state} /></div>
+
+            <div>
+              <RandomPrinter className="printer" food={this.state} />
+            </div>
           </div>
         </div>
       </div>
@@ -125,6 +95,4 @@ class RandomMeal extends Component {
   }
 }
 
-
- 
 export default RandomMeal;

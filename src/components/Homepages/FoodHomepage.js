@@ -49,67 +49,96 @@ class FoodHomepage extends React.Component {
             <Slider {...settings}>
               <div>
                 <Link className="d-inline-block" to={`/foods/breakfast`}>
-                  <img src={breakfast} style={{display:"inline-block"}} className="foodimg" alt="breakfast" />
-                  </Link>
-                  <div>
-                    <h5 className="recipeFoods">Breakfast Recipes</h5>
-                  </div>
-                
+                  <img
+                    src={breakfast}
+                    style={{ display: "inline-block" }}
+                    className="foodimg"
+                    alt="breakfast"
+                  />
+                </Link>
+                <div>
+                  <h5 className="recipeFoods">Breakfast Recipes</h5>
+                </div>
               </div>
 
               <div>
                 <Link to={`/foods/starter`}>
-                  <img src={starter} style={{display:"inline-block"}} className="foodimg" alt="starter" />
-                  </Link>
-                  <div>
-                    <h5 className="recipeFoods">Starters</h5>
-                  </div>
-                
+                  <img
+                    src={starter}
+                    style={{ display: "inline-block" }}
+                    className="foodimg"
+                    alt="starter"
+                  />
+                </Link>
+                <div>
+                  <h5 className="recipeFoods">Starters</h5>
+                </div>
               </div>
 
               <div>
                 <Link to={`/foods/beef`}>
-                  <img src={meat} style={{display:"inline-block"}} className="foodimg" alt="meat food" />
-                  </Link>
-                  <div>
-                    <h5 className="recipeFoods">Beef Recipes</h5>
-                  </div>
-                
+                  <img
+                    src={meat}
+                    style={{ display: "inline-block" }}
+                    className="foodimg"
+                    alt="meat food"
+                  />
+                </Link>
+                <div>
+                  <h5 className="recipeFoods">Beef Recipes</h5>
+                </div>
               </div>
 
               <div>
                 <Link to={`/foods/chicken`}>
-                  <img src={chicken} style={{display:"inline-block"}} className="foodimg" alt="chicken food" />
-                  </Link>
-                  <div>
-                    <h5 className="recipeFoods">Chicken Recipes</h5>
-                  </div>
-                
+                  <img
+                    src={chicken}
+                    style={{ display: "inline-block" }}
+                    className="foodimg"
+                    alt="chicken food"
+                  />
+                </Link>
+                <div>
+                  <h5 className="recipeFoods">Chicken Recipes</h5>
+                </div>
               </div>
 
               <div>
                 <Link to={`/foods/seafood`}>
-                  <img src={seafood} style={{display:"inline-block"}} className="foodimg" alt="sea food" />
-                  </Link>
-                  <div>
-                    <h5 className="recipeFoods">SeaFood Recipes</h5>
-                  </div>
-                
+                  <img
+                    src={seafood}
+                    style={{ display: "inline-block" }}
+                    className="foodimg"
+                    alt="sea food"
+                  />
+                </Link>
+                <div>
+                  <h5 className="recipeFoods">SeaFood Recipes</h5>
+                </div>
               </div>
 
               <div>
                 <Link to={`/foods/pasta`}>
-                  <img src={pasta} style={{display:"inline-block"}} className="foodimg" alt="pasta food" />
-                  </Link>
-                  <div>
-                    <h5 className="recipeFoods">Pasta Recipes</h5>
-                  </div>
-                
+                  <img
+                    src={pasta}
+                    style={{ display: "inline-block" }}
+                    className="foodimg"
+                    alt="pasta food"
+                  />
+                </Link>
+                <div>
+                  <h5 className="recipeFoods">Pasta Recipes</h5>
+                </div>
               </div>
 
               <div>
                 <Link to={`/foods/lamb`}>
-                  <img src={lamb} style={{display:"inline-block"}} className="foodimg" alt="lamb food" />
+                  <img
+                    src={lamb}
+                    style={{ display: "inline-block" }}
+                    className="foodimg"
+                    alt="lamb food"
+                  />
                   <div>
                     <h5 className="recipeFoods">Lamb Recipes</h5>
                   </div>
@@ -118,34 +147,45 @@ class FoodHomepage extends React.Component {
 
               <div>
                 <Link to={`/foods/pork`}>
-                  <img src={pork} style={{display:"inline-block"}} className="foodimg" alt="pork food" />
-                  </Link>
-                  <div>
-                    <h5 className="recipeFoods">Pork Recipes</h5>
-                  </div>
-                
+                  <img
+                    src={pork}
+                    style={{ display: "inline-block" }}
+                    className="foodimg"
+                    alt="pork food"
+                  />
+                </Link>
+                <div>
+                  <h5 className="recipeFoods">Pork Recipes</h5>
+                </div>
               </div>
 
               <div>
                 <Link to={`/foods/vegetarian`}>
-                  <img src={vegetarian} style={{display:"inline-block"}} className="foodimg" alt="vetarian food"/>
-                  </Link>
-                  <div>
-                    <h5 className="recipeFoods">Vegetarian Recipes</h5>
-                  </div>
-                
+                  <img
+                    src={vegetarian}
+                    style={{ display: "inline-block" }}
+                    className="foodimg"
+                    alt="vetarian food"
+                  />
+                </Link>
+                <div>
+                  <h5 className="recipeFoods">Vegetarian Recipes</h5>
+                </div>
               </div>
 
               <div>
                 <Link to={`/foods/dessert`}>
-                  <img src={dessert} style={{display:"inline-block"}} className="foodimg" alt="dessert" />
-                  </Link>
-                  <div>
-                    <h5 className="recipeFoods">Desserts Recipes</h5>
-                  </div>
-                
+                  <img
+                    src={dessert}
+                    style={{ display: "inline-block" }}
+                    className="foodimg"
+                    alt="dessert"
+                  />
+                </Link>
+                <div>
+                  <h5 className="recipeFoods">Desserts Recipes</h5>
+                </div>
               </div>
-
             </Slider>
           </div>
         </div>
