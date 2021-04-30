@@ -22,6 +22,34 @@ class FoodDetail extends Component {
     }
   };
 
+  handleIngredients = () => {
+    let item = {};
+    let n = 0;
+
+    if (this.state.food) {
+      let ingredients = Object.entries(this.state.food).filter(
+        (x) =>
+          (x[0].includes("strIngredient") || x[0].includes("strMeasure")) &&
+          x[1] !== null &&
+          x[1] !== " " &&
+          x[1] !== ""
+      );
+      console.log(ingredients);
+      for (let i = 0; i < ingredients.length; i++) {
+        item[ingredients[i][0]] = ingredients[i][1];
+      }
+
+      n = Math.floor(ingredients.length / 2);
+    }
+    return new Array(n).fill(1).map((y, i) => {
+      return (
+        <li className="individualFDText">
+          {item[`strMeasure${i + 1}`]} {item[`strIngredient${i + 1}`]}
+        </li>
+      );
+    });
+  };
+
   render = () => {
     return (
       <div className="allindividualFD">
@@ -47,67 +75,7 @@ class FoodDetail extends Component {
               <div>
                 <ul className="text-left mt-2 mb-2">
                   <h3 className="h3Text">Ingredients:</h3>
-                  {/* <li>{this.state.food[`strIngredient${indice}`]}</li> */}
-                  <li className="individualFDText">
-                    {this.state.food.strMeasure1}{" "}
-                    {this.state.food.strIngredient1}
-                  </li>
-                  <li className="individualFDText">
-                    {this.state.food.strMeasure2}{" "}
-                    {this.state.food.strIngredient2}
-                  </li>
-                  <li className="individualFDText">
-                    {this.state.food.strMeasure3}{" "}
-                    {this.state.food.strIngredient3}
-                  </li>
-                  <li className="individualFDText">
-                    {this.state.food.strMeasure4}{" "}
-                    {this.state.food.strIngredient4}
-                  </li>
-                  <li className="individualFDText">
-                    {this.state.food.strMeasure5}{" "}
-                    {this.state.food.strIngredient5}
-                  </li>
-                  <li className="individualFDText">
-                    {this.state.food.strMeasure6}{" "}
-                    {this.state.food.strIngredient6}
-                  </li>
-                  <li className="individualFDText">
-                    {this.state.food.strMeasure7}{" "}
-                    {this.state.food.strIngredient7}
-                  </li>
-                  <li className="individualFDText">
-                    {this.state.food.strMeasure8}{" "}
-                    {this.state.food.strIngredient8}
-                  </li>
-                  <li className="individualFDText">
-                    {this.state.food.strMeasure9}{" "}
-                    {this.state.food.strIngredient9}
-                  </li>
-                  <li className="individualFDText">
-                    {this.state.food.strMeasure10}{" "}
-                    {this.state.food.strIngredient10}
-                  </li>
-                  <li className="individualFDText">
-                    {this.state.food.strMeasure11}{" "}
-                    {this.state.food.strIngredient11}
-                  </li>
-                  <li className="individualFDText">
-                    {this.state.food.strMeasure12}{" "}
-                    {this.state.food.strIngredient12}
-                  </li>
-                  <li className="individualFDText">
-                    {this.state.food.strMeasure13}{" "}
-                    {this.state.food.strIngredient13}
-                  </li>
-                  <li className="individualFDText">
-                    {this.state.food.strMeasure14}{" "}
-                    {this.state.food.strIngredient14}
-                  </li>
-                  <li className="individualFDText">
-                    {this.state.food.strMeasure15}{" "}
-                    {this.state.food.strIngredient15}
-                  </li>
+                  {this.handleIngredients()}
                 </ul>
               </div>
             </div>

@@ -1,17 +1,17 @@
 import React from "react";
-import "./Homepages/mainhomepage.css"
+import "./Homepages/mainhomepage.css";
 
 function TextInput(props) {
   return (
-      <div>
+    <div>
       <label htmlFor={props.id} className="form-label">
         {props.label}
       </label>
-      <input 
+      <input
         name={props.name}
         type="text"
         className="form-control"
-        style={{backgroundColor:"transparent", color:"white"}}
+        style={{ backgroundColor: "transparent", color: "white" }}
         id={props.id}
         value={props.value}
         onChange={props.onChange}

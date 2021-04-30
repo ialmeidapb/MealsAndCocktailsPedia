@@ -57,11 +57,14 @@ h3 {
 
 .individualFDText,
 li {
-  /* list-style-type: disc; */
+  list-style-type: disc;
   line-height: 28px;
   font-size: 23px;
   font-family: dancingscript;
-  
+}
+
+.individualFDText {
+  margin-left: 40px;
 }
 
 .imgFDDetail {
@@ -120,4 +123,34 @@ a:active {
   color: white;
   text-shadow: 1px 1px 2px black, 1 1 1em #146da1, 0 0.2em #146da1;
   text-align: justify;
+}
+
+.randomPrintTitle {
+  text-align: justify;
+  margin: 30px;
+  color: black;
+}
+
+.instructionsRandomPrint {
+  text-align: left;
+  color: black;
+}
+
+.textMargin {
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-top: 30px;
+}
+
+.randomPrintLi {
+  text-align: justify;
+  margin-left: 40px;
+  color: black;
+  font-family: "Josefin Sans", sans-serif;
+  list-style-type: none;
+}
+.randomPrintImg {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
 }

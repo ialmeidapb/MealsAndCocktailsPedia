@@ -14,13 +14,13 @@
   list-style: none;
   text-decoration: none;
   font-family: "Josefin Sans", sans-serif;
-  color: #BDB8D7;
+  color: #bdb8d7;
   font-size: 17px;
 }
 .menu {
   font-family: amaticsc;
   font-size: 60px;
-  color: #BDB8D7;
+  color: #bdb8d7;
   text-shadow: 1px 1px 2px black, 0 0 1em #146da1, 0 0 0.2em #146da1;
 }
 
@@ -46,12 +46,12 @@
   font-size: 12px;
   font-weight: 500;
   padding: 18px;
-  border-bottom: 1px solid #BDB8D7;
+  border-bottom: 1px solid #bdb8d7;
   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
   border-top: 1px solid rgba(255, 255, 255, 0.05);
 }
 .wrapper .sidebar ul li a {
-  color: #BDB8D7;
+  color: #bdb8d7;
   display: block;
   text-decoration: none;
 }
@@ -59,10 +59,10 @@
   width: 25px;
 }
 .wrapper .sidebar ul li:hover {
-  background-color: #0C4160;
+  background-color: #0c4160;
 }
 .wrapper .sidebar ul li:hover {
-  color: #C3CEDA;
+  color: #c3ceda;
   font-size: 18px;
 }
 .wrapper .sidebar .social_media {
@@ -79,7 +79,7 @@
   line-height: 45px;
   text-align: center;
   margin: 0 5px;
-  color: #BDB8D7;
+  color: #bdb8d7;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
 }
@@ -91,7 +91,7 @@
   padding: 20px;
   background: #fff;
   color: #717171;
-  border-bottom: 1px solid #E0E4E8;
+  border-bottom: 1px solid #e0e4e8;
 }
 .wrapper .main_content .info {
   margin: 20px;

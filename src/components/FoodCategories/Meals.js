@@ -47,7 +47,7 @@ class Meals extends Component {
         <div className="allMeals">
           <div className="search container mt-5" style={{ zIndex: 2 }}>
             <p>Search</p>
-            <TextInput 
+            <TextInput
               name="searchedItem"
               value={this.state.searchedItem}
               id="searchedItem"
